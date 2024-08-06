@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pcu_mod:barrium_ingot"
+          "name": "pcu_mod:malachite"
         }
       ],
       "conditions": [
@@ -16,5 +16,5 @@
       ]
     }
   ],
-  "random_sequence": "pcu_mod:blocks/barrium_ingot"
+  "random_sequence": "pcu_mod:blocks/malachite"
 }

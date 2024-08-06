@@ -19,10 +19,17 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, PCUMod.MOD_ID);
 
     //Liste des blocks
-    //Bloc de Barrium Ore
+    //Minerai de Barrium Ore
     public static final RegistryObject<Block> BARRIUM_ORE = registerBlock("barrium_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
+    //Minerai de Terbium
+    public static final RegistryObject<Block> TERBIUM_ORE = registerBlock("terbium_ore",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+
+    //Minerai de Malachite
+    public static final RegistryObject<Block> MALACHITE_ORE = registerBlock("malachite_ore",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

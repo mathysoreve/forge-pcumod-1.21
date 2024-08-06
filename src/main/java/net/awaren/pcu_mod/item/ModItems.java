@@ -53,6 +53,32 @@ public class ModItems
     // Cadinite Ingot
     public static final RegistryObject<Item> CADINITE_INGOT = ITEMS.register("cadinite_ingot", () -> new Item(new Item.Properties()));
 
+    // Negrium Shard
+    public static final RegistryObject<Item> NEGRIUM_SHARD = ITEMS.register("negrium_shard", () -> new Item(new Item.Properties()));
+
+    // Regalium Shard
+    public static final RegistryObject<Item> REGALIUM_SHARD = ITEMS.register("regalium_shard", () -> new Item(new Item.Properties()));
+
+    // Connerite Shard
+    public static final RegistryObject<Item> CONNERITE_SHARD = ITEMS.register("connerite_shard", () -> new Item(new Item.Properties()));
+
+    // Divinite Shard
+    public static final RegistryObject<Item> DIVINITE_SHARD = ITEMS.register("divinite_shard", () -> new Item(new Item.Properties()));
+
+    // Negrium Ingot
+    public static final RegistryObject<Item> NEGRIUM = ITEMS.register("negrium", () -> new Item(new Item.Properties()));
+
+    // Regalium Ingot
+    public static final RegistryObject<Item> REGALIUM = ITEMS.register("regalium", () -> new Item(new Item.Properties()));
+
+    // Connerite Ingot
+    public static final RegistryObject<Item> CONNERITE = ITEMS.register("connerite", () -> new Item(new Item.Properties()));
+
+    // Divinite Ingot
+    public static final RegistryObject<Item> DIVINITE = ITEMS.register("divinite", () -> new Item(new Item.Properties()));
+
+
+
 
 
     public static void register(IEventBus eventBus)

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "ingredients",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pcu_mod:regalium_shard"
+    }
+  },
+  "result": {
+    "id": "pcu_mod:regalium",
+    "count": 1
+  }
+}

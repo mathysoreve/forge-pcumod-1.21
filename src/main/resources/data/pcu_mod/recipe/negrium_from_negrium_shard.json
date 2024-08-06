@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "ingredients",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pcu_mod:negrium_shard"
+    }
+  },
+  "result": {
+    "id": "pcu_mod:negrium",
+    "count": 1
+  }
+}

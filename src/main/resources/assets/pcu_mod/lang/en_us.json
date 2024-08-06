@@ -19,5 +19,18 @@
   "item.pcu_mod.cadinite_ingot": "Cadinite Ingot",
 
 
+  "item.pcu_mod.negrium_shard": "Negrium Shard",
+  "item.pcu_mod.regalium_shard": "Regalium Shard",
+  "item.pcu_mod.connerite_shard": "Connerite Shard",
+  "item.pcu_mod.divinite_shard": "Divinite Shard",
+
+  "item.pcu_mod.negrium": "Negrium",
+  "item.pcu_mod.regalium": "Regalium",
+  "item.pcu_mod.connerite": "Connerite",
+  "item.pcu_mod.divinite": "Divinite",
+
+
+
+
   "creativetab.pcu_tab": "PCU Tab"
 }

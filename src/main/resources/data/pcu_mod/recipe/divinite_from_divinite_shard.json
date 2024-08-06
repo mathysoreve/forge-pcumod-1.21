@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "ingredients",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pcu_mod:divinite_shard"
+    }
+  },
+  "result": {
+    "id": "pcu_mod:divinite",
+    "count": 1
+  }
+}

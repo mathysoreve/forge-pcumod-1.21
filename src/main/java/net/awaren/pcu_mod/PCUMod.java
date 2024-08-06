@@ -1,6 +1,7 @@
 package net.awaren.pcu_mod;
 
 import com.mojang.logging.LogUtils;
+import net.awaren.pcu_mod.block.ModBlocks;
 import net.awaren.pcu_mod.item.ModCreativeModeTabs;
 import net.awaren.pcu_mod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class PCUMod
 
         // Register the items
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

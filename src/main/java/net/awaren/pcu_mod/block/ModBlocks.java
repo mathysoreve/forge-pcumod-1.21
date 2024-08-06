@@ -22,7 +22,7 @@ public class ModBlocks {
     //Liste des blocks
     //Bloc de Barrium Ore
     public static final RegistryObject<Block> BARRIUM_ORE = registerBlock("barrium_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
             ));
 
     public static final RegistryObject<Block> TERBIUM_ORE = registerBlock("terbium_ore",

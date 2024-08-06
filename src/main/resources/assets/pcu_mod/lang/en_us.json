@@ -2,12 +2,21 @@
   "item.pcu_mod.barrium_ingot": "Barrium Ingot",
   "item.pcu_mod.raw_terbium": "Raw Terbium",
   "item.pcu_mod.malachite": "Malachite",
+
   "item.pcu_mod.neodyme_ingot": "Neodyme Ingot",
   "item.pcu_mod.ytterbium_ingot": "Ytterbium Ingot",
   "item.pcu_mod.lutecium_ingot": "Lutecium Ingot",
   "item.pcu_mod.scandium_ingot": "Scandium Ingot",
   "block.pcu_mod.barrium_ore": "Barrium Ore",
   "block.pcu_mod.terbium_ore": "Terbium Ore",
+
+  "item.pcu_mod.pyrite_ingot": "Pyrite Ingot",
+  "item.pcu_mod.cavalite_ingot": "Cavalite Ingot",
+
+  "item.pcu_mod.pyregrite_ingot": "Pyregrite Ingot",
+  "item.pcu_mod.pygalite_ingot": "Pygalite Ingot",
+  "item.pcu_mod.cavarite_ingot": "Cavarite Ingot",
+  "item.pcu_mod.cadinite_ingot": "Cadinite Ingot",
 
 
   "creativetab.pcu_tab": "PCU Tab"

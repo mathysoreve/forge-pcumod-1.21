@@ -35,6 +35,24 @@ public class ModItems
     // Scandium Ingot
     public static final RegistryObject<Item> SCANDIUM_INGOT = ITEMS.register("scandium_ingot", () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
+    // Pyrite Ingot
+    public static final RegistryObject<Item> PYRITE_INGOT = ITEMS.register("pyrite_ingot", () -> new Item(new Item.Properties()));
+
+    // Cavalite Ingot
+    public static final RegistryObject<Item> CAVALITE_INGOT = ITEMS.register("cavalite_ingot", () -> new Item(new Item.Properties()));
+
+    // Pyregrite Ingot
+    public static final RegistryObject<Item> PYREGRITE_INGOT = ITEMS.register("pyregrite_ingot", () -> new Item(new Item.Properties()));
+
+    // Pygalite Ingot
+    public static final RegistryObject<Item> PYGALITE_INGOT = ITEMS.register("pygalite_ingot", () -> new Item(new Item.Properties()));
+
+    // Cavarite Ingot
+    public static final RegistryObject<Item> CAVARITE_INGOT = ITEMS.register("cavarite_ingot", () -> new Item(new Item.Properties()));
+
+    // Cadinite Ingot
+    public static final RegistryObject<Item> CADINITE_INGOT = ITEMS.register("cadinite_ingot", () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus)

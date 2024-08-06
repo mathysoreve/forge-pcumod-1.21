@@ -22,12 +22,14 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.pcu_tab"))
 
                     .displayItems((pParameters, pOutput) -> {
-                        for (RegistryObject<Item> item: ModItems.ITEMS.getEntries()) {
-                            pOutput.accept(item.get());
-                        }
                         for (RegistryObject<Block> block: ModBlocks.BLOCKS.getEntries()) {
                             pOutput.accept(block.get());
                         }
+
+                        for (RegistryObject<Item> item: ModItems.ITEMS.getEntries()) {
+                            pOutput.accept(item.get());
+                        }
+
 
                     })
 

@@ -2,7 +2,6 @@ package net.awaren.pcu_mod.block;
 
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.item.ModItems;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -22,10 +21,7 @@ public class ModBlocks {
     //Liste des blocks
     //Bloc de Barrium Ore
     public static final RegistryObject<Block> BARRIUM_ORE = registerBlock("barrium_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.5F, 16F)
-                    .requiresCorrectToolForDrops()
-            ));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

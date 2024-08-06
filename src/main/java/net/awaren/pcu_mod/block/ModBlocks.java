@@ -22,14 +22,10 @@ public class ModBlocks {
     //Liste des blocks
     //Bloc de Barrium Ore
     public static final RegistryObject<Block> BARRIUM_ORE = registerBlock("barrium_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5F, 16F)
+                    .requiresCorrectToolForDrops()
             ));
-
-    public static final RegistryObject<Block> TERBIUM_ORE = registerBlock("terbium_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(0.4F, 6.0F)));
-
-    public static final RegistryObject<Block> MALACHITE_ORE = registerBlock("malachite_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(0.4F, 6.0F)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

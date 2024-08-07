@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "pcu_mod:divinite_shard"
+      "item": "pcu_mod:connerite_shard"
     }
   },
   "result": {
-    "id": "pcu_mod:divinite",
+    "item": "pcu_mod:connerite",
     "count": 1
   }
 }

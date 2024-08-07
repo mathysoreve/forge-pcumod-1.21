@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "pcu_mod:regalium_shard"
+      "item": "pcu_mod:divinite_shard"
     }
   },
   "result": {
-    "id": "pcu_mod:regalium",
+    "item": "pcu_mod:divinite",
     "count": 1
   }
 }

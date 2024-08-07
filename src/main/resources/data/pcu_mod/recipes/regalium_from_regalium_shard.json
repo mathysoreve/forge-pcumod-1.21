@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "pcu_mod:connerite_shard"
+      "item": "pcu_mod:regalium_shard"
     }
   },
   "result": {
-    "id": "pcu_mod:connerite",
+    "item": "pcu_mod:regalium",
     "count": 1
   }
 }

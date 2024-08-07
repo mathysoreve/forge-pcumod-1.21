@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": {
+      "item": "pcu_mod:regalium_shard"
+    }
+  },
+  "pattern": [
+    "///",
+    "///",
+    "///"
+  ],
+  "result": {
+    "item": "pcu_mod:regalium"
+  },
+  "show_notification": true
+}

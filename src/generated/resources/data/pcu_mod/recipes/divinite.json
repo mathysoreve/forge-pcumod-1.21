@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": {
+      "item": "pcu_mod:divinite_shard"
+    }
+  },
+  "pattern": [
+    "///",
+    "///",
+    "///"
+  ],
+  "result": {
+    "item": "pcu_mod:divinite"
+  },
+  "show_notification": true
+}

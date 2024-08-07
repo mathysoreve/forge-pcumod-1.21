@@ -65,17 +65,21 @@ public class ModItems
     // Divinite Shard
     public static final RegistryObject<Item> DIVINITE_SHARD = ITEMS.register("divinite_shard", () -> new Item(new Item.Properties()));
 
-    // Negrium Ingot
+    // Negrium
     public static final RegistryObject<Item> NEGRIUM = ITEMS.register("negrium", () -> new Item(new Item.Properties()));
 
-    // Regalium Ingot
+    // Regalium
     public static final RegistryObject<Item> REGALIUM = ITEMS.register("regalium", () -> new Item(new Item.Properties()));
 
-    // Connerite Ingot
+    // Connerite
     public static final RegistryObject<Item> CONNERITE = ITEMS.register("connerite", () -> new Item(new Item.Properties()));
 
-    // Divinite Ingot
+    // Divinite
     public static final RegistryObject<Item> DIVINITE = ITEMS.register("divinite", () -> new Item(new Item.Properties()));
+
+    // Amadeum
+    public static final RegistryObject<Item> AMADEUM = ITEMS.register("amadeum", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELBALITE = ITEMS.register("elbalite", () -> new Item(new Item.Properties()));
 
 
 

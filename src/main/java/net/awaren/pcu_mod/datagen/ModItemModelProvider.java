@@ -40,6 +40,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DIVINITE);
         simpleItem(ModItems.AMADEUM);
         simpleItem(ModItems.ELBALITE);
+
+        simpleItem(ModItems.PCU_THEME_DISC);
+        simpleItem(ModItems.EL_MARIACHI_DISC);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

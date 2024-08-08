@@ -1,0 +1,18 @@
+{
+  "pcu_theme_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:pcu_theme_song",
+        "stream": true
+      }
+    ]
+  },
+  "el_mariachi_song" : {
+    "sounds": [
+      {
+        "name:": "pcu_mod:el_mariachi_song",
+        "stream": true
+      }
+    ]
+  }
+}

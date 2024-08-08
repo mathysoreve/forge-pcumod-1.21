@@ -1,8 +1,10 @@
 package net.awaren.pcu_mod.item;
 
 import net.awaren.pcu_mod.PCUMod;
+import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -82,7 +84,14 @@ public class ModItems
     public static final RegistryObject<Item> ELBALITE = ITEMS.register("elbalite", () -> new Item(new Item.Properties()));
 
 
+    // Note : le calcul des ticks c'est:
+    // Total des secondes de la musique * 20
 
+    public static final RegistryObject<Item> PCU_THEME_DISC = ITEMS.register("pcu_theme_disc",
+            () -> new RecordItem(6, ModSounds.PCU_THEME_SONG, new Item.Properties().stacksTo(1), 3980));
+
+    public static final RegistryObject<Item> EL_MARIACHI_DISC = ITEMS.register("el_mariachi_disc",
+            () -> new RecordItem(6, ModSounds.EL_MARIACHI_SONG, new Item.Properties().stacksTo(1), 4780));
 
 
     public static void register(IEventBus eventBus)

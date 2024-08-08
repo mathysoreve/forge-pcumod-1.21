@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.awaren.pcu_mod.block.ModBlocks;
 import net.awaren.pcu_mod.item.ModCreativeModeTabs;
 import net.awaren.pcu_mod.item.ModItems;
+import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,7 +34,12 @@ public class PCUMod
 
         // Register the items
         ModItems.register(modEventBus);
+
+        // Register the blocks
         ModBlocks.register(modEventBus);
+
+        // Register the sounds
+        ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

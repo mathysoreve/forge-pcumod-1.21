@@ -1,9 +1,11 @@
 package net.awaren.pcu_mod.datagen;
 
 import net.awaren.pcu_mod.PCUMod;
+import net.awaren.pcu_mod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -17,6 +19,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.PCU_THEME_DISC.get());
 
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.EL_MARIACHI_DISC.get());
     }
 }

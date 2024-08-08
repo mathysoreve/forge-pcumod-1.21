@@ -34,6 +34,15 @@
   "item.pcu_mod.elbalite": "Elbalite",
 
 
+  "item.pcu_mod.pcu_theme_disc": "PCU Theme",
+  "item.pcu_mod.pcu_theme_disc.desc": "PCU Theme",
+
+  "item.pcu_mod.el_mariachi_disc": "El Mariachi",
+  "item.pcu_mod.el_mariachi_disc.desc": "El Mariachi",
+
+
+
+
 
 
   "creativetab.pcu_tab": "PCU Tab"

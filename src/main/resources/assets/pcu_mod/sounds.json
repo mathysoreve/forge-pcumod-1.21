@@ -10,7 +10,7 @@
   "el_mariachi_song" : {
     "sounds": [
       {
-        "name:": "pcu_mod:el_mariachi_song",
+        "name": "pcu_mod:el_mariachi_song",
         "stream": true
       }
     ]

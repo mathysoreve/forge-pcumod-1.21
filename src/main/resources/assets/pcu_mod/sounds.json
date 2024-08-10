@@ -14,5 +14,13 @@
         "stream": true
       }
     ]
+  },
+  "lcp_theme_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:lcp_theme_song",
+        "stream": true
+      }
+    ]
   }
 }

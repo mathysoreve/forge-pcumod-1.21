@@ -93,6 +93,9 @@ public class ModItems
     public static final RegistryObject<Item> EL_MARIACHI_DISC = ITEMS.register("el_mariachi_disc",
             () -> new RecordItem(6, ModSounds.EL_MARIACHI_SONG, new Item.Properties().stacksTo(1), 4780));
 
+    public static final RegistryObject<Item> LCP_THEME_DISC = ITEMS.register("lcp_theme_disc",
+            () -> new RecordItem(6, ModSounds.LCP_THEME_SONG, new Item.Properties().stacksTo(1), 960));
+
 
     public static void register(IEventBus eventBus)
     {

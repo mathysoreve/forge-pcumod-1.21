@@ -25,5 +25,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.EL_MARIACHI_DISC.get());
 
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.LCP_THEME_DISC.get());
+
     }
 }

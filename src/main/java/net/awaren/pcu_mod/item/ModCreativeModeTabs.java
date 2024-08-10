@@ -2,14 +2,19 @@ package net.awaren.pcu_mod.item;
 
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.block.ModBlocks;
+import net.awaren.pcu_mod.painting.ModPaintings;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.decoration.PaintingVariant;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTabs {
@@ -18,7 +23,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> PCU_TAB = CREATIVE_MODE_TABS.register("pcu_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.BARRIUM_INGOT.get()))
+                    .icon(() -> new ItemStack(ModItems.MALACHITE.get()))
                     .title(Component.translatable("creativetab.pcu_tab"))
 
                     .displayItems((pParameters, pOutput) -> {
@@ -30,7 +35,6 @@ public class ModCreativeModeTabs {
                             pOutput.accept(item.get());
                         }
 
-
                     })
 
                     .build());
@@ -38,4 +42,5 @@ public class ModCreativeModeTabs {
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
+
 }

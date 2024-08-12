@@ -17,6 +17,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> PCU_THEME_SONG = registerSoundEvents("pcu_theme_song");
     public static final RegistryObject<SoundEvent> EL_MARIACHI_SONG = registerSoundEvents("el_mariachi_song");
     public static final RegistryObject<SoundEvent> LCP_THEME_SONG = registerSoundEvents("lcp_theme_song");
+    public static final RegistryObject<SoundEvent> BLACK_DRAGON_SONG = registerSoundEvents("black_dragon_song");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(PCUMod.MOD_ID, name)));

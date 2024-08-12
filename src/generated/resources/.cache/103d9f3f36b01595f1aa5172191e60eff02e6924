@@ -1,10 +1,10 @@
-// 1.20.1	2024-08-08T13:07:05.7457065	Registries
+// 1.20.1	2024-08-12T16:21:39.7954331	Registries
 614dffad3937f8725a24e305e88c284e6003ed89 data/pcu_mod/forge/biome_modifier/add_barrium_ore.json
 931246583f388317a54f6bc1d97254e498c6d658 data/pcu_mod/forge/biome_modifier/add_malachite_ore.json
 47d56949834b41c045933c8d45dd52847b05fa3c data/pcu_mod/forge/biome_modifier/add_terbium_ore.json
 0b908f1fcf88c2bcce6efdb27811c8aa1682d074 data/pcu_mod/worldgen/configured_feature/barrium_ore.json
 469142c8864cda52e2581e917196ce0467d02b7a data/pcu_mod/worldgen/configured_feature/malachite_ore.json
 baab59920192fe3a491f3891da051a8d0e5a16ad data/pcu_mod/worldgen/configured_feature/terbium_ore.json
-44cc686b189d9a2cb980ccb9b2eec81dbe39375d data/pcu_mod/worldgen/placed_feature/barrium_ore_placed.json
-5232952e22953f393f885ef1ea9258277214a5d7 data/pcu_mod/worldgen/placed_feature/malachite_ore_placed.json
-f731f57015bdef656973e4256444c7c45d9090f3 data/pcu_mod/worldgen/placed_feature/terbium_ore_placed.json
+507ff8da4d470a876f127ac46bf8f0fb75aa97d6 data/pcu_mod/worldgen/placed_feature/barrium_ore_placed.json
+3333439c2ae2ba956448945a1f63280721222128 data/pcu_mod/worldgen/placed_feature/malachite_ore_placed.json
+435feae5049934e149fbf5d569f34ca361ea9662 data/pcu_mod/worldgen/placed_feature/terbium_ore_placed.json

@@ -35,7 +35,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         );
 
         this.add(ModBlocks.MALACHITE_ORE.get(), block ->
-                createMultipleOreDrops(ModBlocks.MALACHITE_ORE.get(), ModItems.MALACHITE.get(), 2.0F, 5.0f)
+                createMultipleOreDrops(ModBlocks.MALACHITE_ORE.get(), ModItems.MALACHITE.get(), 1.0F, 3.0f)
         );
     }
 

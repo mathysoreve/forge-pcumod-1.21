@@ -22,14 +22,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CONNERITE.get())
-                .pattern("///")
-                .pattern("///")
-                .pattern("///")
-                .define('/', ModItems.CONNERITE_SHARD.get())
-                .unlockedBy(getHasName(ModItems.CONNERITE_SHARD.get()), has(ModItems.CONNERITE_SHARD.get()))
-                .save(pWriter);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIVINITE.get())
                 .pattern("///")
                 .pattern("///")
@@ -44,14 +36,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("///")
                 .define('/', ModItems.NEGRIUM_SHARD.get())
                 .unlockedBy(getHasName(ModItems.NEGRIUM_SHARD.get()), has(ModItems.NEGRIUM_SHARD.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REGALIUM.get())
-                .pattern("///")
-                .pattern("///")
-                .pattern("///")
-                .define('/', ModItems.REGALIUM_SHARD.get())
-                .unlockedBy(getHasName(ModItems.REGALIUM_SHARD.get()), has(ModItems.REGALIUM_SHARD.get()))
                 .save(pWriter);
     }
 

@@ -23,6 +23,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BARRIUM_ORE_KEY = registerKey("barrium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TERBIUM_ORE_KEY = registerKey("terbium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_MALACHITE_ORE_KEY = registerKey("malachite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_NEODYME_ORE_KEY = registerKey("neodyme_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_LUTECIUM_ORE_KEY = registerKey("lutecium_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -45,8 +47,16 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceable, ModBlocks.MALACHITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepSlateReplaceable, ModBlocks.MALACHITE_ORE.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> netherNeodymeOres = List.of(
+                OreConfiguration.target(netherrackReplaceable, ModBlocks.NEODYME_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> endLuteciumOres = List.of(
+                OreConfiguration.target(endReplaceable, ModBlocks.LUTECIUM_ORE.get().defaultBlockState()));
+
         register(context, OVERWORLD_BARRIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldBarriumOres, 9));
         register(context, OVERWORLD_TERBIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTerbiumOres, 6));
+        register(context, NETHER_NEODYME_ORE_KEY, Feature.ORE, new OreConfiguration(netherNeodymeOres, 3));
+        register(context, END_LUTECIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endLuteciumOres, 3));
         register(context, OVERWORLD_MALACHITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMalachiteOres, 6));
 
 

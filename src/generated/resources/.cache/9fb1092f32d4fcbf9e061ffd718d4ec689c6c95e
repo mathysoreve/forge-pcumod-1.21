@@ -1,9 +1,5 @@
-// 1.20.1	2024-08-07T19:49:49.8486636	Recipes
-ad97f327b038e2a2433c79b5b87addbd7d149ee1 data/pcu_mod/advancements/recipes/misc/connerite.json
+// 1.20.1	2024-08-12T18:57:14.5608591	Recipes
 e7c4308970f622cba93bec3b3b464ad53281fcf1 data/pcu_mod/advancements/recipes/misc/divinite.json
 2c07db39bdcd8c9e45715892904bc3c07223cb18 data/pcu_mod/advancements/recipes/misc/negrium.json
-b49fd895d3583e91e3c2d39dd77920a1a7675fa8 data/pcu_mod/advancements/recipes/misc/regalium.json
-407b4e2428bc8231aa7f3afd414f8e7385d983ec data/pcu_mod/recipes/connerite.json
 faff827db1d644440f46c92db8d1ad6cfab8009d data/pcu_mod/recipes/divinite.json
 ef89910f55ca60f413f159701707d023ac33ac77 data/pcu_mod/recipes/negrium.json
-5a11b2bcae1875766596c724c7d95cd92a684a9e data/pcu_mod/recipes/regalium.json

@@ -4,9 +4,9 @@
   "item.pcu_mod.malachite": "Malachite",
 
   "item.pcu_mod.neodyme_ingot": "Neodyme Ingot",
-  "item.pcu_mod.ytterbium_ingot": "Ytterbium Ingot",
+  "item.pcu_mod.neodyme_ore": "Neodyme Ore",
   "item.pcu_mod.lutecium_ingot": "Lutecium Ingot",
-  "item.pcu_mod.scandium_ingot": "Scandium Ingot",
+  "item.pcu_mod.lutecium_ore": "Lutecium Ore",
   "block.pcu_mod.barrium_ore": "Barrium Ore",
   "block.pcu_mod.terbium_ore": "Terbium Ore",
   "block.pcu_mod.malachite_ore": "Malachite Ore",
@@ -14,20 +14,11 @@
   "item.pcu_mod.pyrite_ingot": "Pyrite Ingot",
   "item.pcu_mod.cavalite_ingot": "Cavalite Ingot",
 
-  "item.pcu_mod.pyregrite_ingot": "Pyregrite Ingot",
-  "item.pcu_mod.pygalite_ingot": "Pygalite Ingot",
-  "item.pcu_mod.cavarite_ingot": "Cavarite Ingot",
-  "item.pcu_mod.cadinite_ingot": "Cadinite Ingot",
-
 
   "item.pcu_mod.negrium_shard": "Negrium Shard",
-  "item.pcu_mod.regalium_shard": "Regalium Shard",
-  "item.pcu_mod.connerite_shard": "Connerite Shard",
   "item.pcu_mod.divinite_shard": "Divinite Shard",
 
   "item.pcu_mod.negrium": "Negrium",
-  "item.pcu_mod.regalium": "Regalium",
-  "item.pcu_mod.connerite": "Connerite",
   "item.pcu_mod.divinite": "Divinite",
 
   "item.pcu_mod.amadeum": "Amadeum",

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "pcu_mod:neodyme_ore_placed",
+  "step": "underground_ores"
+}

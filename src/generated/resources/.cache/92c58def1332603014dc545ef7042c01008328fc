@@ -1,11 +1,7 @@
-// 1.20.1	2024-08-10T23:42:26.7903234	Item Models: pcu_mod
+// 1.20.1	2024-08-12T18:57:14.559859	Item Models: pcu_mod
 a6db1339f1662f6aed691cf0ec2d90a1242bf5eb assets/pcu_mod/models/item/amadeum.json
 54a62e853ff61986f0b34885e3a19c8b1efd6f15 assets/pcu_mod/models/item/barrium_ingot.json
-7fbe10e902cfe9c2aaf562aedcc6df4cb943adc2 assets/pcu_mod/models/item/cadinite_ingot.json
 450167b16ccbbb835f43b177cb1ad3f1d98ba25b assets/pcu_mod/models/item/cavalite_ingot.json
-0230042cdc04e8969a6b346b636b22591be7234c assets/pcu_mod/models/item/cavarite_ingot.json
-4b39ff99dfeb7063b395203aeccf32f4df5d4a7f assets/pcu_mod/models/item/connerite.json
-0ab6b4d716a787df839e15fe5af2c936e4b5fcab assets/pcu_mod/models/item/connerite_shard.json
 fe8df64811709fb05c60069302acfd389ad284fb assets/pcu_mod/models/item/divinite.json
 df3c562dfc0b7adbc5da93b1784cb228da1990cf assets/pcu_mod/models/item/divinite_shard.json
 e1604116e8f2b7f1c89cf55d490f279e76e8e298 assets/pcu_mod/models/item/elbalite.json
@@ -17,11 +13,5 @@ d72b45675a7ffea579c4a9b6d58c4e1f324c7b69 assets/pcu_mod/models/item/negrium.json
 025eecbfc1701e52b6ab941fa44bc1c34d0f0625 assets/pcu_mod/models/item/negrium_shard.json
 9f025ef7b1742c8b03df7627c28c7572fcf50eea assets/pcu_mod/models/item/neodyme_ingot.json
 a9e914b7f0867970480e10380ac447fe1b849472 assets/pcu_mod/models/item/pcu_theme_disc.json
-7a46be4833af1731c2dace39f087d84899472809 assets/pcu_mod/models/item/pygalite_ingot.json
-138fbca5c8d543447f409b6a716576c9ae250e3f assets/pcu_mod/models/item/pyregrite_ingot.json
 1da2e5e105138b8726bfceb2ecc659658266a8ed assets/pcu_mod/models/item/pyrite_ingot.json
 89da11658e09b0f9d057fdec0f52c66da1f78a28 assets/pcu_mod/models/item/raw_terbium.json
-4b18a68e7dea37e4b594db60dc901e42f0615814 assets/pcu_mod/models/item/regalium.json
-73e57c194c348cffa8510435f08819a20e1208b6 assets/pcu_mod/models/item/regalium_shard.json
-a6584c864263b1bf50803b19d40043007f3d8807 assets/pcu_mod/models/item/scandium_ingot.json
-2e9284877283fb9be6bba6436f60a8e9c83a437d assets/pcu_mod/models/item/ytterbium_ingot.json

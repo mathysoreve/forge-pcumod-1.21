@@ -31,6 +31,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> MALACHITE_ORE = registerBlock("malachite_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    public static final RegistryObject<Block> NEODYME_ORE = registerBlock("neodyme_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> LUTECIUM_ORE = registerBlock("lutecium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -18,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BARRIUM_ORE);
         blockWithItem(ModBlocks.TERBIUM_ORE);
         blockWithItem(ModBlocks.MALACHITE_ORE);
+        blockWithItem(ModBlocks.NEODYME_ORE);
+        blockWithItem(ModBlocks.LUTECIUM_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

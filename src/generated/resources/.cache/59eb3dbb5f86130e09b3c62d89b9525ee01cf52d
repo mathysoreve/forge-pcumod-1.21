@@ -1,4 +1,6 @@
-// 1.20.1	2024-08-12T15:12:51.8861052	Loot Tables
+// 1.20.1	2024-08-12T18:44:00.9953558	Loot Tables
 6fb0d43c4945206d1b19519a856d69a2003f07d6 data/pcu_mod/loot_tables/blocks/barrium_ore.json
+5dfecdb822151ec049782457d56082650ceaa82f data/pcu_mod/loot_tables/blocks/lutecium_ore.json
 69632d758794efeb5577efdb93e5f99e2977211e data/pcu_mod/loot_tables/blocks/malachite_ore.json
+19b6c4e8a7ded55e2360ed85459a19cc0bffe9b2 data/pcu_mod/loot_tables/blocks/neodyme_ore.json
 5dab961eb782065328ce1ac2e59541f8168eb8f2 data/pcu_mod/loot_tables/blocks/terbium_ore.json

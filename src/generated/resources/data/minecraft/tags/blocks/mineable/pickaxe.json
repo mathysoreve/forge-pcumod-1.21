@@ -2,6 +2,8 @@
   "values": [
     "pcu_mod:barrium_ore",
     "pcu_mod:terbium_ore",
-    "pcu_mod:malachite_ore"
+    "pcu_mod:malachite_ore",
+    "pcu_mod:neodyme_ore",
+    "pcu_mod:lutecium_ore"
   ]
 }

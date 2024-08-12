@@ -34,6 +34,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createOreDrop(ModBlocks.TERBIUM_ORE.get(), ModItems.RAW_TERBIUM.get())
         );
 
+        this.add(ModBlocks.NEODYME_ORE.get(), block ->
+                createOreDrop(ModBlocks.LUTECIUM_ORE.get(), ModItems.NEODYME_INGOT.get())
+        );
+
+        this.add(ModBlocks.LUTECIUM_ORE.get(), block ->
+                createOreDrop(ModBlocks.LUTECIUM_ORE.get(), ModItems.LUTECIUM_INGOT.get())
+        );
+
         this.add(ModBlocks.MALACHITE_ORE.get(), block ->
                 createMultipleOreDrops(ModBlocks.MALACHITE_ORE.get(), ModItems.MALACHITE.get(), 1.0F, 3.0f)
         );

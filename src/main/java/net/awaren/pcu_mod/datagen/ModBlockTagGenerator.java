@@ -23,7 +23,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 add(
                         ModBlocks.BARRIUM_ORE.get(),
                         ModBlocks.TERBIUM_ORE.get(),
-                        ModBlocks.MALACHITE_ORE.get());
+                        ModBlocks.MALACHITE_ORE.get(),
+                        ModBlocks.NEODYME_ORE.get(),
+                        ModBlocks.LUTECIUM_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BARRIUM_ORE.get());
@@ -33,5 +35,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MALACHITE_ORE.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.NEODYME_ORE.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.LUTECIUM_ORE.get());
     }
 }

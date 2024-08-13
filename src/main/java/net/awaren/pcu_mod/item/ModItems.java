@@ -1,10 +1,9 @@
 package net.awaren.pcu_mod.item;
 
 import net.awaren.pcu_mod.PCUMod;
+import net.awaren.pcu_mod.item.custom.SombreroItem;
 import net.awaren.pcu_mod.sound.ModSounds;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.RecordItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -51,7 +50,15 @@ public class ModItems
 
     // Amadeum
     public static final RegistryObject<Item> AMADEUM = ITEMS.register("amadeum", () -> new Item(new Item.Properties()));
+
+    // Elbalite
     public static final RegistryObject<Item> ELBALITE = ITEMS.register("elbalite", () -> new Item(new Item.Properties()));
+
+
+    // Sombrero
+    public static final RegistryObject<Item> SOMBRERO = ITEMS.register("sombrero",
+            () -> new SombreroItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET,
+                    new Item.Properties().stacksTo(1)));
 
     // Disques
     // Note : le calcul des ticks c'est:

@@ -31,6 +31,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AMADEUM);
         simpleItem(ModItems.ELBALITE);
 
+        simpleItem(ModItems.SOMBRERO);
+
         simpleItem(ModItems.PCU_THEME_DISC);
         simpleItem(ModItems.EL_MARIACHI_DISC);
         simpleItem(ModItems.LCP_THEME_DISC);

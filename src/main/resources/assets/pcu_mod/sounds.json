@@ -46,5 +46,13 @@
         "stream": true
       }
     ]
+  },
+  "regedit_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:regedit_song",
+        "stream": true
+      }
+    ]
   }
 }

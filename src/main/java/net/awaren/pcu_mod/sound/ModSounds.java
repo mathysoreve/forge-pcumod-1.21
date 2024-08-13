@@ -19,6 +19,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> BLOOD_FLAVOURED_ROMANCE_SONG = registerSoundEvents("blood_flavoured_romance_song");
     public static final RegistryObject<SoundEvent> LOVE_AT_LAST_SIGHT_SONG = registerSoundEvents("love_at_last_sight_song");
     public static final RegistryObject<SoundEvent> NOT_GUILTY_SONG = registerSoundEvents("not_guilty_song");
+    public static final RegistryObject<SoundEvent> REGEDIT_SONG = registerSoundEvents("regedit_song");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(PCUMod.MOD_ID, name)));

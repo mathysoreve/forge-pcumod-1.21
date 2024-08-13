@@ -60,6 +60,7 @@ public class ModItems
             () -> new SombreroItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET,
                     new Item.Properties().stacksTo(1)));
 
+
     // Disques
     // Note : le calcul des ticks c'est:
     // Total des secondes de la musique * 20
@@ -81,6 +82,9 @@ public class ModItems
 
     public static final RegistryObject<Item> NOT_GUILTY_DISC = ITEMS.register("not_guilty_disc",
             () -> new RecordItem(6, ModSounds.NOT_GUILTY_SONG, new Item.Properties().stacksTo(1), 3960));
+
+    public static final RegistryObject<Item> REGEDIT_DISC = ITEMS.register("regedit_disc",
+            () -> new RecordItem(6, ModSounds.REGEDIT_SONG, new Item.Properties().stacksTo(1), 220));
 
 
     public static void register(IEventBus eventBus)

@@ -39,6 +39,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BLOOD_FLAVOURED_ROMANCE_DISC);
         simpleItem(ModItems.LOVE_AT_LAST_SIGHT_DISC);
         simpleItem(ModItems.NOT_GUILTY_DISC);
+        simpleItem(ModItems.REGEDIT_DISC);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

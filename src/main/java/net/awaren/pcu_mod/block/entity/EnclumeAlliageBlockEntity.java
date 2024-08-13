@@ -32,7 +32,9 @@ public class EnclumeAlliageBlockEntity extends BlockEntity implements MenuProvid
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
 
     private static final int INPUT_SLOT0 = 0;
-    private static final int OUTPUT_SLOT = 1;
+    private static final int INPUT_SLOT1 = 1;
+    private static final int INPUT_SLOT2 = 2;
+    private static final int OUTPUT_SLOT = 3;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
@@ -143,13 +145,18 @@ public class EnclumeAlliageBlockEntity extends BlockEntity implements MenuProvid
     private void craftItem() {
         ItemStack result = new ItemStack(ModItems.PYRITE_INGOT.get(), 1);
         this.itemHandler.extractItem(INPUT_SLOT0, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT0).getItem() == ModItems.BARRIUM_INGOT.get();
+        boolean hasCraftingItem =
+                this.itemHandler.getStackInSlot(INPUT_SLOT0).getItem() == ModItems.BARRIUM_INGOT.get() &&
+                this.itemHandler.getStackInSlot(INPUT_SLOT1).getItem() == ModItems.RAW_TERBIUM.get() &&
+                this.itemHandler.getStackInSlot(INPUT_SLOT2).getItem() == ModItems.NEODYME_INGOT.get();
         ItemStack result = new ItemStack(ModItems.PYRITE_INGOT.get());
 
         return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());

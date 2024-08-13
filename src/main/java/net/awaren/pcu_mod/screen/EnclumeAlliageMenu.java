@@ -33,7 +33,9 @@ public class EnclumeAlliageMenu extends AbstractContainerMenu {
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 17, 47));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 146, 47));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 58, 47));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 101, 47));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 146, 47));
         });
 
         addDataSlots(data);
@@ -67,7 +69,7 @@ public class EnclumeAlliageMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must be the number of slots you have!
     @Override
     public ItemStack quickMoveStack(Player playerIn, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);

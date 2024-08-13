@@ -23,10 +23,26 @@
       }
     ]
   },
-  "black_dragon_song" : {
+  "blood_flavoured_romance_song" : {
     "sounds": [
       {
-        "name": "pcu_mod:black_dragon_song",
+        "name": "pcu_mod:blood_flavoured_romance_song",
+        "stream": true
+      }
+    ]
+  },
+  "love_at_last_sight_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:love_at_last_sight_song",
+        "stream": true
+      }
+    ]
+  },
+  "not_guilty_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:not_guilty_song",
         "stream": true
       }
     ]

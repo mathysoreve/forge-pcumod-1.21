@@ -53,7 +53,7 @@ public class ModItems
     public static final RegistryObject<Item> AMADEUM = ITEMS.register("amadeum", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELBALITE = ITEMS.register("elbalite", () -> new Item(new Item.Properties()));
 
-
+    // Disques
     // Note : le calcul des ticks c'est:
     // Total des secondes de la musique * 20
 
@@ -66,8 +66,14 @@ public class ModItems
     public static final RegistryObject<Item> LCP_THEME_DISC = ITEMS.register("lcp_theme_disc",
             () -> new RecordItem(6, ModSounds.LCP_THEME_SONG, new Item.Properties().stacksTo(1), 960));
 
-    public static final RegistryObject<Item> BLACK_DRAGON_DISC = ITEMS.register("black_dragon_disc",
-            () -> new RecordItem(6, ModSounds.BLACK_DRAGON_SONG, new Item.Properties().stacksTo(1), 1920));
+    public static final RegistryObject<Item> BLOOD_FLAVOURED_ROMANCE_DISC = ITEMS.register("blood_flavoured_romance_disc",
+            () -> new RecordItem(6, ModSounds.BLOOD_FLAVOURED_ROMANCE_SONG, new Item.Properties().stacksTo(1), 4092));
+
+    public static final RegistryObject<Item> LOVE_AT_LAST_SIGHT_DISC = ITEMS.register("love_at_last_sight_disc",
+            () -> new RecordItem(6, ModSounds.LOVE_AT_LAST_SIGHT_SONG, new Item.Properties().stacksTo(1), 3792));
+
+    public static final RegistryObject<Item> NOT_GUILTY_DISC = ITEMS.register("not_guilty_disc",
+            () -> new RecordItem(6, ModSounds.NOT_GUILTY_SONG, new Item.Properties().stacksTo(1), 3960));
 
 
     public static void register(IEventBus eventBus)

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "pcu_mod:item/black_dragon_disc"
+    "layer0": "pcu_mod:item/not_guilty_disc"
   }
 }

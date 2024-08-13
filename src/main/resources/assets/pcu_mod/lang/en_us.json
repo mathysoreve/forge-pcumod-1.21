@@ -1,28 +1,26 @@
 {
-  "item.pcu_mod.barrium_ingot": "Barrium Ingot",
-  "item.pcu_mod.raw_terbium": "Raw Terbium",
-  "item.pcu_mod.malachite": "Malachite",
-
-  "item.pcu_mod.neodyme_ingot": "Neodyme Ingot",
-  "block.pcu_mod.neodyme_ore": "Neodyme Ore",
-  "item.pcu_mod.lutecium_ingot": "Lutecium Ingot",
-  "block.pcu_mod.lutecium_ore": "Lutecium Ore",
   "block.pcu_mod.barrium_ore": "Barrium Ore",
   "block.pcu_mod.terbium_ore": "Terbium Ore",
   "block.pcu_mod.malachite_ore": "Malachite Ore",
+  "block.pcu_mod.neodyme_ore": "Neodyme Ore",
+  "block.pcu_mod.lutecium_ore": "Lutecium Ore",
 
+
+
+  "item.pcu_mod.barrium_ingot": "Barrium Ingot",
+  "item.pcu_mod.raw_terbium": "Raw Terbium",
+  "item.pcu_mod.malachite": "Malachite",
+  "item.pcu_mod.neodyme_ingot": "Neodyme Ingot",
+  "item.pcu_mod.lutecium_ingot": "Lutecium Ingot",
   "item.pcu_mod.pyrite_ingot": "Pyrite Ingot",
   "item.pcu_mod.cavalite_ingot": "Cavalite Ingot",
-
-
   "item.pcu_mod.negrium_shard": "Negrium Shard",
   "item.pcu_mod.divinite_shard": "Divinite Shard",
-
   "item.pcu_mod.negrium": "Negrium",
   "item.pcu_mod.divinite": "Divinite",
-
   "item.pcu_mod.amadeum": "Amadeum",
   "item.pcu_mod.elbalite": "Elbalite",
+
 
 
   "item.pcu_mod.pcu_theme_disc": "PCU Theme",
@@ -31,11 +29,19 @@
   "item.pcu_mod.el_mariachi_disc": "El Mariachi",
   "item.pcu_mod.el_mariachi_disc.desc": "? - El Mariachi",
 
-  "item.pcu_mod.black_dragon_disc": "Black Dragon",
-  "item.pcu_mod.black_dragon_disc.desc": "MCR - Black Dragon Fighting Society",
-
   "item.pcu_mod.lcp_theme_disc": "Le Crime Parfait",
   "item.pcu_mod.lcp_theme_disc.desc": "Awaren - Intro",
+
+  "item.pcu_mod.blood_flavoured_romance_disc": "Machinal Glaçons - Blood Flavoured Romance",
+  "item.pcu_mod.blood_flavoured_romance_disc.desc": "MCR - Thank You For The Venom",
+
+  "item.pcu_mod.love_at_last_sight_disc": "Machinal Glaçons - Love At Last Sight",
+  "item.pcu_mod.love_at_last_sight_disc.desc": "MCR - The Ghost of You",
+
+  "item.pcu_mod.not_guilty_disc": "Machinal Glaçons - Not Guilty (By Reason of Insanity)",
+  "item.pcu_mod.not_guilty_disc.desc": "MCR - It's Not a Fashion Statement, It's a Deathwish",
+
+
 
   "painting.pcu_mod.idris.title": "Idris Elba",
   "painting.pcu_mod.idris.author": "Unknown Author",
@@ -44,7 +50,6 @@
   "painting.pcu_mod.jnounex.author": "Pyrex",
 
   "block.pcu_mod.enclume_alliage": "Alloy anvil",
-
 
 
 

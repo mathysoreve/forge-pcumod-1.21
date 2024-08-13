@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pcu_mod:item/love_at_last_sight_disc"
+  }
+}

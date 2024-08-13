@@ -24,7 +24,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.PCU_THEME_DISC.get(),
                         ModItems.EL_MARIACHI_DISC.get(),
                         ModItems.LCP_THEME_DISC.get(),
-                        ModItems.BLACK_DRAGON_DISC.get()
+                        ModItems.BLOOD_FLAVOURED_ROMANCE_DISC.get(),
+                        ModItems.LOVE_AT_LAST_SIGHT_DISC.get(),
+                        ModItems.NOT_GUILTY_DISC.get()
                 );
 
 

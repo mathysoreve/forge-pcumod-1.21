@@ -66,6 +66,9 @@ public class ModItems
     public static final RegistryObject<Item> LCP_THEME_DISC = ITEMS.register("lcp_theme_disc",
             () -> new RecordItem(6, ModSounds.LCP_THEME_SONG, new Item.Properties().stacksTo(1), 960));
 
+    public static final RegistryObject<Item> BLACK_DRAGON_DISC = ITEMS.register("black_dragon_disc",
+            () -> new RecordItem(6, ModSounds.BLACK_DRAGON_SONG, new Item.Properties().stacksTo(1), 1920));
+
 
     public static void register(IEventBus eventBus)
     {

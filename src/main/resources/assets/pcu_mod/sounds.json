@@ -22,5 +22,13 @@
         "stream": true
       }
     ]
+  },
+  "black_dragon_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:black_dragon_song",
+        "stream": true
+      }
+    ]
   }
 }

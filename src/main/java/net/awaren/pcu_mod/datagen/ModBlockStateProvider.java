@@ -5,6 +5,7 @@ import net.awaren.pcu_mod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -20,6 +21,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MALACHITE_ORE);
         blockWithItem(ModBlocks.NEODYME_ORE);
         blockWithItem(ModBlocks.LUTECIUM_ORE);
+
+        simpleBlockWithItem(ModBlocks.ENCLUME_ALLIAGE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/enclume_alliage")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -1,6 +1,7 @@
 package net.awaren.pcu_mod.block;
 
 import net.awaren.pcu_mod.PCUMod;
+import net.awaren.pcu_mod.block.custom.EnclumeAlliage;
 import net.awaren.pcu_mod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -19,15 +20,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, PCUMod.MOD_ID);
 
     //Liste des blocks
-    //Minerai de Barrium Ore
     public static final RegistryObject<Block> BARRIUM_ORE = registerBlock("barrium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
-    //Minerai de Terbium
     public static final RegistryObject<Block> TERBIUM_ORE = registerBlock("terbium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
-    //Minerai de Malachite
     public static final RegistryObject<Block> MALACHITE_ORE = registerBlock("malachite_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
@@ -36,6 +34,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> LUTECIUM_ORE = registerBlock("lutecium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    //Liste de blocks entities
+    public static final RegistryObject<Block> ENCLUME_ALLIAGE = registerBlock("enclume_alliage",
+            () -> new EnclumeAlliage(BlockBehaviour.Properties.copy(Blocks.ANVIL).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

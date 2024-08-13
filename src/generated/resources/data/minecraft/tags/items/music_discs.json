@@ -2,7 +2,6 @@
   "values": [
     "pcu_mod:pcu_theme_disc",
     "pcu_mod:el_mariachi_disc",
-    "pcu_mod:lcp_theme_disc",
-    "pcu_mod:black_dragon_disc"
+    "pcu_mod:lcp_theme_disc"
   ]
 }

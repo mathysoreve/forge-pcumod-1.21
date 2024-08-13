@@ -34,7 +34,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PCU_THEME_DISC);
         simpleItem(ModItems.EL_MARIACHI_DISC);
         simpleItem(ModItems.LCP_THEME_DISC);
-        simpleItem(ModItems.BLACK_DRAGON_DISC);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

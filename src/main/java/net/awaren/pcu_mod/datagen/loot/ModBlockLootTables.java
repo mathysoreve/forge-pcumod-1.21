@@ -45,6 +45,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.MALACHITE_ORE.get(), block ->
                 createMultipleOreDrops(ModBlocks.MALACHITE_ORE.get(), ModItems.MALACHITE.get(), 1.0F, 3.0f)
         );
+
+        this.dropSelf(ModBlocks.ENCLUME_ALLIAGE.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minAmount, float maxAmount) {

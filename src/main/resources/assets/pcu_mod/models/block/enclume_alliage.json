@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "pcu_mod:block/enclume_alliage",
-		"particle": "block/texture"
+		"particle": "pcu_mod:block/enclume_alliage"
 	},
 	"elements": [
 		{

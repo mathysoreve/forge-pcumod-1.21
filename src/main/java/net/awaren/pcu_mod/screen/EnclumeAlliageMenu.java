@@ -41,7 +41,7 @@ public class EnclumeAlliageMenu extends AbstractContainerMenu {
         addDataSlots(data);
     }
 
-    public boolean isCrafting() {
+    /*public boolean isCrafting() {
         return data.get(0) > 0;
     }
 
@@ -51,7 +51,7 @@ public class EnclumeAlliageMenu extends AbstractContainerMenu {
         int progressArrowSize = 26; // This is the height in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
-    }
+    }*/
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.

@@ -23,6 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -126,30 +127,22 @@ public class EnclumeAlliageBlockEntity extends BlockEntity implements MenuProvid
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
         if(hasRecipe()) {
-            increaseCraftingProgress();
             setChanged(pLevel, pPos, pState);
-
-            if(hasProgressFinished()) {
-                craftItem();
-                resetProgress();
-            }
-        } else {
-            resetProgress();
+            craftItem();
         }
-    }
-
-    private void resetProgress() {
-        progress = 0;
     }
 
     private void craftItem() {
         ItemStack result = new ItemStack(ModItems.PYRITE_INGOT.get(), 1);
-        this.itemHandler.extractItem(INPUT_SLOT0, 1, false);
-        this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
-        this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        if (this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty()) {
+            this.itemHandler.extractItem(INPUT_SLOT0, 1, false);
+            this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
+            this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
+
+            this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                    this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        }
     }
 
     private boolean hasRecipe() {
@@ -168,14 +161,6 @@ public class EnclumeAlliageBlockEntity extends BlockEntity implements MenuProvid
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
-    }
-
-    private boolean hasProgressFinished() {
-        return progress >= maxProgress;
-    }
-
-    private void increaseCraftingProgress() {
-        progress++;
     }
 
 }

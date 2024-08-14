@@ -7,13 +7,23 @@
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
-				"visible_bounds_height": 4.5,
-				"visible_bounds_offset": [0, 1.75, 0]
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
 			},
 			"bones": [
 				{
+					"name": "bipedHead",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "armorHead",
+					"parent": "bipedHead",
+					"pivot": [0, 24, 0]
+				},
+				{
 					"name": "model",
-					"pivot": [0, 32.75, 0],
+					"parent": "armorHead",
+					"pivot": [0, 31, 0],
 					"cubes": [
 						{
 							"origin": [-9, 30, -6],
@@ -44,8 +54,7 @@
 								"east": {"uv": [30, 16], "uv_size": [8, 4]},
 								"south": {"uv": [30, 20], "uv_size": [8, 4]},
 								"west": {"uv": [30, 24], "uv_size": [8, 4]},
-								"up": {"uv": [16, 16], "uv_size": [8, 8]},
-								"down": {"uv": [16, 32], "uv_size": [8, -8]}
+								"up": {"uv": [16, 16], "uv_size": [8, 8]}
 							}
 						},
 						{

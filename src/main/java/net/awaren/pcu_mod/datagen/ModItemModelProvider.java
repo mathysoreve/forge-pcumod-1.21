@@ -31,12 +31,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AMADEUM);
         simpleItem(ModItems.ELBALITE);
 
+        simpleItem(ModItems.SOMBRERO);
+
         simpleItem(ModItems.PCU_THEME_DISC);
         simpleItem(ModItems.EL_MARIACHI_DISC);
         simpleItem(ModItems.LCP_THEME_DISC);
         simpleItem(ModItems.BLOOD_FLAVOURED_ROMANCE_DISC);
         simpleItem(ModItems.LOVE_AT_LAST_SIGHT_DISC);
         simpleItem(ModItems.NOT_GUILTY_DISC);
+        simpleItem(ModItems.REGEDIT_DISC);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

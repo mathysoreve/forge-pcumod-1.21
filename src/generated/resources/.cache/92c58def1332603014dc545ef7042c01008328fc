@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-13T19:46:06.9780604	Item Models: pcu_mod
+// 1.20.1	2024-08-13T23:24:45.8126667	Item Models: pcu_mod
 a6db1339f1662f6aed691cf0ec2d90a1242bf5eb assets/pcu_mod/models/item/amadeum.json
 54a62e853ff61986f0b34885e3a19c8b1efd6f15 assets/pcu_mod/models/item/barrium_ingot.json
 97128977c5c1d21293dc958920406ea732872d63 assets/pcu_mod/models/item/blood_flavoured_romance_disc.json
@@ -18,3 +18,5 @@ d72b45675a7ffea579c4a9b6d58c4e1f324c7b69 assets/pcu_mod/models/item/negrium.json
 a9e914b7f0867970480e10380ac447fe1b849472 assets/pcu_mod/models/item/pcu_theme_disc.json
 1da2e5e105138b8726bfceb2ecc659658266a8ed assets/pcu_mod/models/item/pyrite_ingot.json
 89da11658e09b0f9d057fdec0f52c66da1f78a28 assets/pcu_mod/models/item/raw_terbium.json
+18c6e411572b0e0719c72ace46815a72e951369d assets/pcu_mod/models/item/regedit_disc.json
+4222f89105e3d61f7e62ee7c5c1d4a457606cf48 assets/pcu_mod/models/item/sombrero.json

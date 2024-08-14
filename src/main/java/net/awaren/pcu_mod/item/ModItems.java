@@ -1,9 +1,11 @@
 package net.awaren.pcu_mod.item;
 
 import net.awaren.pcu_mod.PCUMod;
+import net.awaren.pcu_mod.entity.ModEntities;
 import net.awaren.pcu_mod.item.custom.SombreroItem;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -85,6 +87,10 @@ public class ModItems
 
     public static final RegistryObject<Item> REGEDIT_DISC = ITEMS.register("regedit_disc",
             () -> new RecordItem(6, ModSounds.REGEDIT_SONG, new Item.Properties().stacksTo(1), 220));
+
+
+    public static final RegistryObject<Item> ARCHIBOT_SPAWN_EGG = ITEMS.register("archibot_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.ARCHIBOT, 0x1b51c4,0xebf1ff, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus)

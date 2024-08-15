@@ -3,6 +3,8 @@ package net.awaren.pcu_mod;
 import com.mojang.logging.LogUtils;
 import net.awaren.pcu_mod.block.ModBlocks;
 import net.awaren.pcu_mod.block.entity.ModBlockEntities;
+import net.awaren.pcu_mod.entity.ModEntities;
+import net.awaren.pcu_mod.entity.client.ArchibotEntityRenderer;
 import net.awaren.pcu_mod.item.ModCreativeModeTabs;
 import net.awaren.pcu_mod.item.ModItems;
 import net.awaren.pcu_mod.painting.ModPaintings;
@@ -11,6 +13,7 @@ import net.awaren.pcu_mod.screen.EnclumeAlliageScreen;
 import net.awaren.pcu_mod.screen.ModMenuTypes;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -47,11 +50,16 @@ public class PCUMod
         // Register the sounds
         ModSounds.register(modEventBus);
 
+        // Register the entities
+        ModEntities.register(modEventBus);
+
         // Register the paintings
         ModPaintings.register(modEventBus);
 
+        // Register the block entities
         ModBlockEntities.register(modEventBus);
 
+        // Register the menu types
         ModMenuTypes.register(modEventBus);
 
         ModRecipes.register(modEventBus);
@@ -88,7 +96,10 @@ public class PCUMod
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
             MenuScreens.register(ModMenuTypes.ENCLUME_ALLIAGE_MENU.get(), EnclumeAlliageScreen::new);
+
+            EntityRenderers.register(ModEntities.ARCHIBOT.get(), ArchibotEntityRenderer::new);
         }
     }
 }

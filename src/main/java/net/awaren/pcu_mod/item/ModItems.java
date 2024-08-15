@@ -92,6 +92,9 @@ public class ModItems
     public static final RegistryObject<Item> ARCHIBOT_SPAWN_EGG = ITEMS.register("archibot_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ARCHIBOT, 0x1b51c4,0xebf1ff, new Item.Properties()));
 
+    public static final RegistryObject<Item> ARCHIBULLET = ITEMS.register("archibullet",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus)
     {

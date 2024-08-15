@@ -1,0 +1,18 @@
+{
+  "type": "pcu_mod:enclume_alliage",
+  "ingredients": [
+    {
+      "item": "pcu_mod:barrium_ingot"
+    },
+    {
+      "item": "pcu_mod:raw_terbium"
+    },
+    {
+      "item": "pcu_mod:neodyme_ingot"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "pcu_mod:pyrite_ingot"
+  }
+}

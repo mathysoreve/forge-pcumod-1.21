@@ -6,6 +6,7 @@ import net.awaren.pcu_mod.block.entity.ModBlockEntities;
 import net.awaren.pcu_mod.item.ModCreativeModeTabs;
 import net.awaren.pcu_mod.item.ModItems;
 import net.awaren.pcu_mod.painting.ModPaintings;
+import net.awaren.pcu_mod.recipe.ModRecipes;
 import net.awaren.pcu_mod.screen.EnclumeAlliageScreen;
 import net.awaren.pcu_mod.screen.ModMenuTypes;
 import net.awaren.pcu_mod.sound.ModSounds;
@@ -52,6 +53,8 @@ public class PCUMod
         ModBlockEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

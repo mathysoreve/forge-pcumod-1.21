@@ -1,6 +1,7 @@
 package net.awaren.pcu_mod.block.entity;
 
 import net.awaren.pcu_mod.item.ModItems;
+import net.awaren.pcu_mod.recipe.EnclumeAlliageRecipe;
 import net.awaren.pcu_mod.screen.EnclumeAlliageMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,6 +29,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class EnclumeAlliageBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
@@ -133,26 +136,36 @@ public class EnclumeAlliageBlockEntity extends BlockEntity implements MenuProvid
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(ModItems.PYRITE_INGOT.get(), 1);
+        Optional<EnclumeAlliageRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
 
-        if (this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty()) {
-            this.itemHandler.extractItem(INPUT_SLOT0, 1, false);
-            this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
-            this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT0, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
 
-            this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                    this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
-        }
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem =
-                this.itemHandler.getStackInSlot(INPUT_SLOT0).getItem() == ModItems.BARRIUM_INGOT.get() &&
-                this.itemHandler.getStackInSlot(INPUT_SLOT1).getItem() == ModItems.RAW_TERBIUM.get() &&
-                this.itemHandler.getStackInSlot(INPUT_SLOT2).getItem() == ModItems.NEODYME_INGOT.get();
-        ItemStack result = new ItemStack(ModItems.PYRITE_INGOT.get());
+        Optional<EnclumeAlliageRecipe> recipe = getCurrentRecipe();
 
-        return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if (recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<EnclumeAlliageRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+
+        for (int i = 0; i < itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(EnclumeAlliageRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

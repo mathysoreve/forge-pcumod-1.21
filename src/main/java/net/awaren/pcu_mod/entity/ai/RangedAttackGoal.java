@@ -9,6 +9,7 @@ public class RangedAttackGoal extends Goal {
     private final ArchibotEntity mob;
     private final double moveSpeedAmp;
     private int attackCooldown;
+    private int initialAttackCooldown;
     private final float maxAttackDistance;
 
 
@@ -17,11 +18,21 @@ public class RangedAttackGoal extends Goal {
         this.moveSpeedAmp = moveSpeedAmp;
         this.attackCooldown = attackCooldown;
         this.maxAttackDistance = maxAttackDistance;
+
+        this.initialAttackCooldown = attackCooldown;
+    }
+
+    @Override
+    public void start() {
+        super.start();
+        attackCooldown = 20;
     }
 
     @Override
     public boolean canUse() {
-        return mob.getTarget() != null && mob.getTarget().isAlive();
+        LivingEntity target = mob.getTarget();
+
+        return target != null && target.isAlive();
     }
 
     @Override
@@ -43,7 +54,7 @@ public class RangedAttackGoal extends Goal {
 
             if (attackCooldown <= 0) {
                 mob.performRangedAttack(target, 0.1f);
-                attackCooldown = 25;
+                attackCooldown = initialAttackCooldown;
             }
         }
 

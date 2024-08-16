@@ -2,6 +2,7 @@ package net.awaren.pcu_mod.entity.custom;
 
 import net.awaren.pcu_mod.entity.ModEntities;
 import net.awaren.pcu_mod.entity.ai.RangedAttackGoal;
+import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -25,6 +26,7 @@ import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 import org.checkerframework.checker.units.qual.A;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
@@ -65,23 +67,20 @@ public class ArchibotEntity extends Monster implements GeoEntity, RangedAttackMo
 
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
-        return SoundEvents.BEACON_AMBIENT;
+        return ModSounds.ARCHIBOT_IDLE.get();
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ANVIL_DESTROY;
+        return SoundEvents.IRON_GOLEM_DEATH;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return SoundEvents.ANVIL_HIT;
+
+        return SoundEvents.IRON_GOLEM_HURT;
     }
 
-    @Override
-    protected void playStepSound(BlockPos pPos, BlockState pState) {
-        this.playSound(SoundEvents.ANVIL_STEP, 0.15f, 1f);
-    }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
@@ -125,26 +124,22 @@ public class ArchibotEntity extends Monster implements GeoEntity, RangedAttackMo
 
         System.out.println("Performing ranged attack!");
 
-        ArchibulletProjectileEntity bullet = new ArchibulletProjectileEntity(ModEntities.ARCHIBULLET_PROJECTILE.get(), this.level());
+        ArchibulletProjectileEntity bullet = new ArchibulletProjectileEntity(this.level());
 
-        bullet.setPos(this.getX(), this.getEyeY() - 0.1, this.getZ());
+        Vec3 position = this.position();
+        Vec3 targetPosition = target.position();
+        Vec3 direction = targetPosition.subtract(position).normalize();
 
-        // Calcul de la direction pour shooter la cible, basé sur la position de la cible
-        // Je comprends pas grand chose mais ptet que ça marche ? -E
+        bullet.setPos(position.x, position.y + 1, position.z);
 
-        double d0 = target.getX() - this.getX();
-        double d1 = target.getY() - (this.getY() + this.getBbHeight() / 2.0f);
-        double d2 = target.getZ() - this.getZ();
-        double distance = Math.sqrt(d0 * d0 + d2 * d2);
-
-        // Shoot! -E
-        bullet.shoot(d0, d1 + distance * 0.2D, d2, 1f, 12f);
+        double velocityMultiplier = bullet.getVelocityMultiplier();
+        bullet.setDeltaMovement(direction.scale(velocityMultiplier));
 
         this.level().addFreshEntity(bullet);
 
-        System.out.println("Bullet shot towards: " + d0 + ", " + d1 + ", " + d2);
+        playSound(ModSounds.GUN_FIRE.get());
 
-        playSound(SoundEvents.CROSSBOW_SHOOT);
+        System.out.println("Bullet shot towards: " + direction.x + ", " + direction.y + ", " + direction.z);
 
     }
 }

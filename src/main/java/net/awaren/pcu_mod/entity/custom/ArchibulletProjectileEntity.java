@@ -3,10 +3,12 @@ package net.awaren.pcu_mod.entity.custom;
 import net.awaren.pcu_mod.entity.ModEntities;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
+import net.minecraft.world.entity.projectile.AbstractHurtingProjectile;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
@@ -18,16 +20,39 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
 
-public class ArchibulletProjectileEntity extends Projectile implements GeoEntity {
+public class ArchibulletProjectileEntity extends AbstractHurtingProjectile implements GeoEntity {
+
+    private int damage = 3;
+    private static final float VELOCITY_MULTIPLIER = 1.5f;
 
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public ArchibulletProjectileEntity(EntityType<? extends Projectile> pEntityType, Level pLevel) {
+    public ArchibulletProjectileEntity(EntityType<? extends AbstractHurtingProjectile> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
     protected ArchibulletProjectileEntity(Level pLevel) {
         super(ModEntities.ARCHIBULLET_PROJECTILE.get(), pLevel);
+    }
+
+    @Override
+    public boolean isOnFire() {
+        return false;
+    }
+
+    @Override
+    public boolean hurt(DamageSource pSource, float pAmount) {
+        return false;
+    }
+
+    @Override
+    protected boolean shouldBurn() {
+        return false;
+    }
+
+    @Override
+    public boolean isPickable() {
+        return false;
     }
 
     @Override
@@ -39,21 +64,17 @@ public class ArchibulletProjectileEntity extends Projectile implements GeoEntity
     public void tick() {
         super.tick();
 
-        //
-        if(!isNoGravity()) {
-            setDeltaMovement(getDeltaMovement().add(0d, -0.05d, 0.5d));
-        }
+        Vec3 motion = getDeltaMovement();
+        setDeltaMovement(motion);
 
         this.move(MoverType.SELF, getDeltaMovement());
 
-        if(isInWaterOrBubble()) {
+        if(tickCount > 100 || isInWaterOrBubble()) {
             discard();
         }
 
         // Particules de fumée
-
         if (this.level().isClientSide) {
-            Vec3 motion = this.getDeltaMovement();
             this.level().addParticle(ParticleTypes.SMOKE,
                     this.getX(), this.getY(), this.getZ(), motion.x * 0.2, motion.y * 0.2, motion.z * 0.2);
         }
@@ -63,9 +84,11 @@ public class ArchibulletProjectileEntity extends Projectile implements GeoEntity
     @Override
     protected void onHit(HitResult pResult) {
         super.onHit(pResult);
-
-        if (pResult.getType() == HitResult.Type.BLOCK) {
-            discard();
+        if (!this.level().isClientSide) {
+            if (pResult instanceof EntityHitResult entityHitResult) {
+                onHitEntity(entityHitResult);
+            }
+            this.discard();
         }
 
     }
@@ -74,17 +97,18 @@ public class ArchibulletProjectileEntity extends Projectile implements GeoEntity
     protected void onHitEntity(EntityHitResult pResult) {
         super.onHitEntity(pResult);
 
-        Entity entity = pResult.getEntity();
+        if(!this.level().isClientSide) {
+            if (pResult.getEntity() instanceof LivingEntity livingEntity) {
 
-        if (entity instanceof LivingEntity livingEntity) {
-            livingEntity.hurt(this.damageSources().thrown(this, this.getOwner()), 3f);
+                System.out.println("Projectile hit : " + livingEntity.getName().getString());
 
-            setDeltaMovement(Vec3.ZERO);
+                livingEntity.hurt(this.damageSources().mobProjectile(this, (LivingEntity) this.getOwner()), this.damage);
 
-            playSound(SoundEvents.ANVIL_HIT);
-
+            }
             discard();
         }
+
+
 
     }
 
@@ -98,4 +122,7 @@ public class ArchibulletProjectileEntity extends Projectile implements GeoEntity
         return cache;
     }
 
+    public double getVelocityMultiplier() {
+        return VELOCITY_MULTIPLIER;
+    }
 }

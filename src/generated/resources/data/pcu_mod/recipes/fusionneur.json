@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": [],
+    "/": {
+      "item": "pcu_mod:barrium_ingot"
+    }
+  },
+  "pattern": [
+    "***",
+    "*/*",
+    "///"
+  ],
+  "result": {
+    "item": "pcu_mod:fusionneur"
+  },
+  "show_notification": true
+}

@@ -24,6 +24,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(ModBlocks.ENCLUME_ALLIAGE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/enclume_alliage")));
+
+        simpleBlockWithItem(ModBlocks.FUSIONNEUR.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/fusionneur")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -14,6 +14,9 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<EnclumeAlliageRecipe>> ENCLUME_ALLIAGE_SERIALIZER =
             SERIALIZERS.register("enclume_alliage", () -> EnclumeAlliageRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<FusionneurRecipe>> FUSIONNEUR_SERIALIZER =
+            SERIALIZERS.register("fusionneur", () -> FusionneurRecipe.Serializer.INSTANCE);
+
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
     }

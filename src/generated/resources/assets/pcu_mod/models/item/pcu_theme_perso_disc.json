@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pcu_mod:item/pcu_theme_perso_disc"
+  }
+}

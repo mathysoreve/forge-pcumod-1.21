@@ -17,6 +17,9 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<EnclumeAlliageMenu>> ENCLUME_ALLIAGE_MENU =
             registerMenuType("enclume_alliage_menu", EnclumeAlliageMenu::new);
 
+    public static final RegistryObject<MenuType<FusionneurMenu>> FUSIONNEUR_MENU =
+            registerMenuType("fusionneur_menu", FusionneurMenu::new);
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }

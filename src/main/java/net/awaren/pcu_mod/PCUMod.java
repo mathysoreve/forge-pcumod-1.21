@@ -10,6 +10,7 @@ import net.awaren.pcu_mod.item.ModItems;
 import net.awaren.pcu_mod.painting.ModPaintings;
 import net.awaren.pcu_mod.recipe.ModRecipes;
 import net.awaren.pcu_mod.screen.EnclumeAlliageScreen;
+import net.awaren.pcu_mod.screen.FusionneurScreen;
 import net.awaren.pcu_mod.screen.ModMenuTypes;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -98,6 +99,8 @@ public class PCUMod
         public static void onClientSetup(FMLClientSetupEvent event) {
 
             MenuScreens.register(ModMenuTypes.ENCLUME_ALLIAGE_MENU.get(), EnclumeAlliageScreen::new);
+
+            MenuScreens.register(ModMenuTypes.FUSIONNEUR_MENU.get(), FusionneurScreen::new);
 
             EntityRenderers.register(ModEntities.ARCHIBOT.get(), ArchibotEntityRenderer::new);
         }

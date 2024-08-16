@@ -54,5 +54,13 @@
         "stream": true
       }
     ]
+  },
+  "pcu_theme_perso_song" : {
+    "sounds": [
+      {
+        "name": "pcu_mod:pcu_theme_perso_song",
+        "stream": true
+      }
+    ]
   }
 }

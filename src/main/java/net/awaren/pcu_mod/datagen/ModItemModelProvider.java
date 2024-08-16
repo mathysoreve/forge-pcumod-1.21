@@ -40,6 +40,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LOVE_AT_LAST_SIGHT_DISC);
         simpleItem(ModItems.NOT_GUILTY_DISC);
         simpleItem(ModItems.REGEDIT_DISC);
+        simpleItem(ModItems.PCU_THEME_PERSO_DISC);
 
         withExistingParent(ModItems.ARCHIBOT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }

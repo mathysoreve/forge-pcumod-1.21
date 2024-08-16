@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "enclume_alliage",
+	"parent": "pcu_enclume_alliage",
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "pcu_mod:block/enclume_alliage",
@@ -189,5 +189,34 @@
 				"down": {"uv": [4, 8.5, 3.75, 9.25], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [-27, 0, 0],
+			"translation": [0, 0.75, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-27, 0, 0],
+			"translation": [0, 0.75, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"ground": {
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [24, 36, 0],
+			"translation": [0, 2, 0]
+		},
+		"fixed": {
+			"translation": [0, 1.5, 0],
+			"scale": [0.6, 0.6, 0.6]
+		}
+	}
 }

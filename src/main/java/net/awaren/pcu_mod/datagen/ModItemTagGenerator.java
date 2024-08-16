@@ -27,7 +27,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.BLOOD_FLAVOURED_ROMANCE_DISC.get(),
                         ModItems.LOVE_AT_LAST_SIGHT_DISC.get(),
                         ModItems.NOT_GUILTY_DISC.get(),
-                        ModItems.REGEDIT_DISC.get()
+                        ModItems.REGEDIT_DISC.get(),
+                        ModItems.PCU_THEME_PERSO_DISC.get()
                 );
 
 

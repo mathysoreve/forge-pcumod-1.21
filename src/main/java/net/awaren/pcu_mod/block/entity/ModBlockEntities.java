@@ -17,6 +17,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(EnclumeAlliageBlockEntity::new,
                             ModBlocks.ENCLUME_ALLIAGE.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<FusionneurBlockEntity>> FUSIONNEUR_BE =
+            BLOCK_ENTITIES.register("fusionneur_be", () ->
+                    BlockEntityType.Builder.of(FusionneurBlockEntity::new,
+                            ModBlocks.FUSIONNEUR.get()).build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

@@ -47,6 +47,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         );
 
         this.dropSelf(ModBlocks.ENCLUME_ALLIAGE.get());
+
+        this.dropSelf(ModBlocks.FUSIONNEUR.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minAmount, float maxAmount) {

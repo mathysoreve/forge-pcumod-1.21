@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-14T17:22:48.9106151	Item Models: pcu_mod
+// 1.20.1	2024-08-16T17:10:56.2311042	Item Models: pcu_mod
 a6db1339f1662f6aed691cf0ec2d90a1242bf5eb assets/pcu_mod/models/item/amadeum.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/pcu_mod/models/item/archibot_spawn_egg.json
 54a62e853ff61986f0b34885e3a19c8b1efd6f15 assets/pcu_mod/models/item/barrium_ingot.json
@@ -17,6 +17,7 @@ d72b45675a7ffea579c4a9b6d58c4e1f324c7b69 assets/pcu_mod/models/item/negrium.json
 9f025ef7b1742c8b03df7627c28c7572fcf50eea assets/pcu_mod/models/item/neodyme_ingot.json
 30643b1d76bacf310815b54f91d89dc24d76536f assets/pcu_mod/models/item/not_guilty_disc.json
 a9e914b7f0867970480e10380ac447fe1b849472 assets/pcu_mod/models/item/pcu_theme_disc.json
+3f1e7d8945016b9f19ace27115c4f4c11869bdab assets/pcu_mod/models/item/pcu_theme_perso_disc.json
 1da2e5e105138b8726bfceb2ecc659658266a8ed assets/pcu_mod/models/item/pyrite_ingot.json
 89da11658e09b0f9d057fdec0f52c66da1f78a28 assets/pcu_mod/models/item/raw_terbium.json
 18c6e411572b0e0719c72ace46815a72e951369d assets/pcu_mod/models/item/regedit_disc.json

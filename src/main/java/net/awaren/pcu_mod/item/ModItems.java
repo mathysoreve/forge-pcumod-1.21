@@ -1,5 +1,6 @@
 package net.awaren.pcu_mod.item;
 
+import ca.weblite.objc.Proxy;
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.entity.ModEntities;
 import net.awaren.pcu_mod.item.custom.SombreroItem;
@@ -87,6 +88,9 @@ public class ModItems
 
     public static final RegistryObject<Item> REGEDIT_DISC = ITEMS.register("regedit_disc",
             () -> new RecordItem(6, ModSounds.REGEDIT_SONG, new Item.Properties().stacksTo(1), 220));
+
+    public static final RegistryObject<Item> PCU_THEME_PERSO_DISC = ITEMS.register("pcu_theme_perso_disc",
+            () -> new RecordItem(6, ModSounds.PCU_THEME_PERSO_SONG, new Item.Properties().stacksTo(1), 8640));
 
 
     public static final RegistryObject<Item> ARCHIBOT_SPAWN_EGG = ITEMS.register("archibot_spawn_egg",

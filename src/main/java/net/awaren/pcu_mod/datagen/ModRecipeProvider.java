@@ -1,9 +1,12 @@
 package net.awaren.pcu_mod.datagen;
 
+import com.eliotlash.mclib.math.functions.classic.Mod;
 import net.awaren.pcu_mod.PCUMod;
+import net.awaren.pcu_mod.block.ModBlocks;
 import net.awaren.pcu_mod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -36,6 +39,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("///")
                 .define('/', ModItems.NEGRIUM_SHARD.get())
                 .unlockedBy(getHasName(ModItems.NEGRIUM_SHARD.get()), has(ModItems.NEGRIUM_SHARD.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FUSIONNEUR.get())
+                .pattern("***")
+                .pattern("*/*")
+                .pattern("///")
+                .define('/', ModItems.BARRIUM_INGOT.get())
+                .define('*', Items.AIR)
+                .unlockedBy(getHasName(ModItems.BARRIUM_INGOT.get()), has(ModItems.BARRIUM_INGOT.get()))
+                .unlockedBy(getHasName(Items.AIR), has(Items.AIR))
                 .save(pWriter);
     }
 

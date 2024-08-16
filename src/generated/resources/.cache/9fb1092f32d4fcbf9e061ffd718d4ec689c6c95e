@@ -1,5 +1,7 @@
-// 1.20.1	2024-08-12T18:57:14.5608591	Recipes
+// 1.20.1	2024-08-16T18:10:41.0494727	Recipes
 e7c4308970f622cba93bec3b3b464ad53281fcf1 data/pcu_mod/advancements/recipes/misc/divinite.json
+7130556f12bf4d90cacd5c39cfaa73c5a2aea7d9 data/pcu_mod/advancements/recipes/misc/fusionneur.json
 2c07db39bdcd8c9e45715892904bc3c07223cb18 data/pcu_mod/advancements/recipes/misc/negrium.json
 faff827db1d644440f46c92db8d1ad6cfab8009d data/pcu_mod/recipes/divinite.json
+542e7312cbfe487d50c8843cf5b11155a7a0065a data/pcu_mod/recipes/fusionneur.json
 ef89910f55ca60f413f159701707d023ac33ac77 data/pcu_mod/recipes/negrium.json

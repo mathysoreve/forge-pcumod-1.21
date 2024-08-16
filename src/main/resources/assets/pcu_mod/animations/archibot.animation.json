@@ -6,6 +6,9 @@
 		},
 		"animation.archibot.walk": {
 			"loop": true
+		},
+		"animation.archibot.attack": {
+			"loop": false
 		}
 	},
 	"geckolib_format_version": 2

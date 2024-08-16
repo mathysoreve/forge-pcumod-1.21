@@ -22,6 +22,13 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> REGEDIT_SONG = registerSoundEvents("regedit_song");
     public static final RegistryObject<SoundEvent> PCU_THEME_PERSO_SONG = registerSoundEvents("pcu_theme_perso_song");
 
+    // Mob Sounds
+    public static final RegistryObject<SoundEvent> ARCHIBOT_IDLE = registerSoundEvents("archibot_idle");
+
+
+    public static final RegistryObject<SoundEvent> GUN_FIRE = registerSoundEvents("gun_fire");
+
+
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(PCUMod.MOD_ID, name)));
     }

@@ -1,4 +1,27 @@
 {
+  "archibot_idle": {
+    "subtitles": "sounds.pcu_mod.archibot_idle",
+    "sounds": [
+      "pcu_mod:archibot_idle_1",
+      "pcu_mod:archibot_idle_2",
+      "pcu_mod:archibot_idle_3"
+    ]
+  },
+
+  "gun_fire": {
+    "subtitles": "sounds.pcu_mod.gun_fire",
+    "sounds": [
+      "pcu_mod:gun_fire"
+    ]
+  },
+
+
+
+
+
+
+
+
   "pcu_theme_song" : {
     "sounds": [
       {

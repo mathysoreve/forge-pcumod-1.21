@@ -42,6 +42,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REGEDIT_DISC);
         simpleItem(ModItems.PCU_THEME_PERSO_DISC);
 
+        simpleItem(ModItems.ARCHIBULLET);
+
         withExistingParent(ModItems.ARCHIBOT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 

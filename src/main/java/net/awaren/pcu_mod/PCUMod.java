@@ -5,6 +5,7 @@ import net.awaren.pcu_mod.block.ModBlocks;
 import net.awaren.pcu_mod.block.entity.ModBlockEntities;
 import net.awaren.pcu_mod.entity.ModEntities;
 import net.awaren.pcu_mod.entity.client.ArchibotEntityRenderer;
+import net.awaren.pcu_mod.entity.client.ArchibulletProjectileEntityRenderer;
 import net.awaren.pcu_mod.item.ModCreativeModeTabs;
 import net.awaren.pcu_mod.item.ModItems;
 import net.awaren.pcu_mod.painting.ModPaintings;
@@ -103,6 +104,7 @@ public class PCUMod
             MenuScreens.register(ModMenuTypes.FUSIONNEUR_MENU.get(), FusionneurScreen::new);
 
             EntityRenderers.register(ModEntities.ARCHIBOT.get(), ArchibotEntityRenderer::new);
+            EntityRenderers.register(ModEntities.ARCHIBULLET_PROJECTILE.get(), ArchibulletProjectileEntityRenderer::new);
         }
     }
 }

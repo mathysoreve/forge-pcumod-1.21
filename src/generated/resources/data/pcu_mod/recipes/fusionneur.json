@@ -2,15 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "*": [],
+    "*": {
+      "item": "minecraft:blast_furnace"
+    },
+    "+": {
+      "item": "minecraft:lava_bucket"
+    },
     "/": {
-      "item": "pcu_mod:barrium_ingot"
+      "item": "minecraft:cobblestone"
     }
   },
   "pattern": [
-    "***",
-    "*/*",
-    "///"
+    "///",
+    "/+/",
+    "/*/"
   ],
   "result": {
     "item": "pcu_mod:fusionneur"

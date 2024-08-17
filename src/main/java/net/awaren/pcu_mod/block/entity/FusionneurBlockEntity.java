@@ -130,9 +130,20 @@ public class FusionneurBlockEntity extends BlockEntity implements MenuProvider {
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
         if(hasRecipe()) {
+            increaseCraftingProgress();
             setChanged(pLevel, pPos, pState);
-            craftItem();
+
+            if(hasProgressFinished()) {
+                craftItem();
+                resetProgress();
+            }
+        } else {
+            resetProgress();
         }
+    }
+
+    private void resetProgress() {
+        progress = 0;
     }
 
     private void craftItem() {
@@ -174,6 +185,14 @@ public class FusionneurBlockEntity extends BlockEntity implements MenuProvider {
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
         return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+    }
+
+    private boolean hasProgressFinished() {
+        return progress >= maxProgress;
+    }
+
+    private void increaseCraftingProgress() {
+        progress++;
     }
 
 }

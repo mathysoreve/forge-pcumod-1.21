@@ -41,14 +41,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.NEGRIUM_SHARD.get()), has(ModItems.NEGRIUM_SHARD.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FUSIONNEUR.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ENCLUME_ALLIAGE.get())
                 .pattern("***")
-                .pattern("*/*")
+                .pattern(" / ")
                 .pattern("///")
                 .define('/', ModItems.BARRIUM_INGOT.get())
-                .define('*', Items.AIR)
+                .define('*', Items.OBSIDIAN.asItem())
                 .unlockedBy(getHasName(ModItems.BARRIUM_INGOT.get()), has(ModItems.BARRIUM_INGOT.get()))
-                .unlockedBy(getHasName(Items.AIR), has(Items.AIR))
+                .unlockedBy(getHasName(Items.OBSIDIAN.asItem()), has(Items.OBSIDIAN.asItem()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FUSIONNEUR.get())
+                .pattern("///")
+                .pattern("/+/")
+                .pattern("/*/")
+                .define('/', Items.COBBLESTONE.asItem())
+                .define('*', Items.BLAST_FURNACE.asItem())
+                .define('+', Items.LAVA_BUCKET.asItem())
+                .unlockedBy(getHasName(Items.COBBLESTONE.asItem()), has(Items.COBBLESTONE.asItem()))
+                .unlockedBy(getHasName(Items.BLAST_FURNACE.asItem()), has(Items.BLAST_FURNACE.asItem()))
+                .unlockedBy(getHasName(Items.LAVA_BUCKET.asItem()), has(Items.LAVA_BUCKET.asItem()))
                 .save(pWriter);
     }
 

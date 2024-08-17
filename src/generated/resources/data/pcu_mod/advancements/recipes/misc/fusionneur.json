@@ -1,24 +1,36 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_air": {
+    "has_blast_furnace": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:air"
+              "minecraft:blast_furnace"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_barrium_ingot": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "pcu_mod:barrium_ingot"
+              "minecraft:cobblestone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lava_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:lava_bucket"
             ]
           }
         ]
@@ -34,8 +46,9 @@
   },
   "requirements": [
     [
-      "has_barrium_ingot",
-      "has_air",
+      "has_cobblestone",
+      "has_blast_furnace",
+      "has_lava_bucket",
       "has_the_recipe"
     ]
   ],

@@ -32,26 +32,27 @@ public class FusionneurMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 17, 47));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 58, 47));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 101, 47));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 146, 47));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 23, 11));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 63, 11));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 43, 57));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 116, 35));
         });
 
         addDataSlots(data);
     }
 
-    /*public boolean isCrafting() {
+    public boolean isCrafting() {
         return data.get(0) > 0;
     }
 
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);  // Max Progress
-        int progressArrowSize = 26; // This is the height in pixels of your arrow
+        int progressArrowSize = 24;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
-    }*/
+
+    }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.

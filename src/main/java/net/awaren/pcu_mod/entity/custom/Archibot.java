@@ -1,12 +1,8 @@
 package net.awaren.pcu_mod.entity.custom;
 
-import net.awaren.pcu_mod.entity.ModEntities;
-import net.awaren.pcu_mod.entity.ai.RangedAttackGoal;
+import net.awaren.pcu_mod.entity.ai.ArchibotRangedAttackGoal;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -22,12 +18,10 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.npc.AbstractVillager;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import org.checkerframework.checker.units.qual.A;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -35,11 +29,11 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-public class ArchibotEntity extends Monster implements GeoEntity, RangedAttackMob {
+public class Archibot extends Monster implements GeoEntity, RangedAttackMob {
 
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public ArchibotEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
+    public Archibot(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
@@ -48,7 +42,7 @@ public class ArchibotEntity extends Monster implements GeoEntity, RangedAttackMo
         this.goalSelector.addGoal(1, new RandomStrollGoal(this, 1));
         this.goalSelector.addGoal(1, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
-        this.goalSelector.addGoal(2, new RangedAttackGoal(this, 1.0D, 25, 15f));
+        this.goalSelector.addGoal(2, new ArchibotRangedAttackGoal(this, 1.0D, 25, 15f));
 
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
         this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -67,20 +61,24 @@ public class ArchibotEntity extends Monster implements GeoEntity, RangedAttackMo
 
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
-        return ModSounds.ARCHIBOT_IDLE.get();
+        return ModSounds.ARCHIBOT_AMBIENT.get();
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.IRON_GOLEM_DEATH;
+        return ModSounds.ARCHIBOT_DEATH.get();
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
 
-        return SoundEvents.IRON_GOLEM_HURT;
+        return ModSounds.ARCHIBOT_HURT.get();
     }
 
+    @Override
+    protected void playStepSound(BlockPos pPos, BlockState pState) {
+        playSound(ModSounds.ARCHIBOT_STEP.get(), 0.20f, 1f);
+    }
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {

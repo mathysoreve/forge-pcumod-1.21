@@ -1,7 +1,7 @@
 package net.awaren.pcu_mod.entity;
 
 import net.awaren.pcu_mod.PCUMod;
-import net.awaren.pcu_mod.entity.custom.ArchibotEntity;
+import net.awaren.pcu_mod.entity.custom.Archibot;
 import net.awaren.pcu_mod.entity.custom.ArchibulletProjectileEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -14,9 +14,9 @@ public class ModEntities {
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, PCUMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<ArchibotEntity>> ARCHIBOT
+    public static final RegistryObject<EntityType<Archibot>> ARCHIBOT
             = ENTITY_TYPES.register("archibot",
-            () -> EntityType.Builder.of(ArchibotEntity::new, MobCategory.MONSTER)
+            () -> EntityType.Builder.of(Archibot::new, MobCategory.MONSTER)
                     .sized(1f, 1.5f)
                     .build("archibot"));
 

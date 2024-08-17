@@ -1,19 +1,19 @@
 package net.awaren.pcu_mod.entity.ai;
 
-import net.awaren.pcu_mod.entity.custom.ArchibotEntity;
+import net.awaren.pcu_mod.entity.custom.Archibot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.Goal;
 
-public class RangedAttackGoal extends Goal {
+public class ArchibotRangedAttackGoal extends Goal {
 
-    private final ArchibotEntity mob;
+    private final Archibot mob;
     private final double moveSpeedAmp;
     private int attackCooldown;
     private int initialAttackCooldown;
     private final float maxAttackDistance;
 
 
-    public RangedAttackGoal(ArchibotEntity mob, double moveSpeedAmp, int attackCooldown, float maxAttackDistance) {
+    public ArchibotRangedAttackGoal(Archibot mob, double moveSpeedAmp, int attackCooldown, float maxAttackDistance) {
         this.mob = mob;
         this.moveSpeedAmp = moveSpeedAmp;
         this.attackCooldown = attackCooldown;
@@ -25,7 +25,14 @@ public class RangedAttackGoal extends Goal {
     @Override
     public void start() {
         super.start();
+        mob.setAggressive(true);
         attackCooldown = 20;
+    }
+
+    @Override
+    public void stop() {
+        super.stop();
+        mob.setAggressive(false);
     }
 
     @Override
@@ -44,6 +51,8 @@ public class RangedAttackGoal extends Goal {
     public void tick() {
         LivingEntity target = mob.getTarget();
         if (target == null) return;
+
+        mob.lookAt(target, 30f, 30f);
 
         double distanceToTarget = mob.distanceToSqr(target.getX(), target.getY(), target.getZ());
 

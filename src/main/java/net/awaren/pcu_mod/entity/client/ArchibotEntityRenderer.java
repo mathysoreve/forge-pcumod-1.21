@@ -12,9 +12,4 @@ public class ArchibotEntityRenderer extends GeoEntityRenderer<Archibot> {
         super(renderManager, new ArchibotEntityModel());
     }
 
-    @Override
-    public ResourceLocation getTextureLocation(Archibot animatable) {
-        return new ResourceLocation(PCUMod.MOD_ID, "textures/entity/archibot.png");
-    }
-
 }

@@ -3,6 +3,7 @@ package net.awaren.pcu_mod.entity.custom;
 import net.awaren.pcu_mod.entity.ai.ArchibotRangedAttackGoal;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -136,6 +137,8 @@ public class Archibot extends Monster implements GeoEntity, RangedAttackMob {
         this.level().addFreshEntity(bullet);
 
         playSound(ModSounds.GUN_FIRE.get());
+
+        sendSystemMessage(Component.literal("Bullet shot towards: " + direction.x + ", " + direction.y + ", " + direction.z));
 
         System.out.println("Bullet shot towards: " + direction.x + ", " + direction.y + ", " + direction.z);
 

@@ -23,7 +23,12 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> PCU_THEME_PERSO_SONG = registerSoundEvents("pcu_theme_perso_song");
 
     // Mob Sounds
-    public static final RegistryObject<SoundEvent> ARCHIBOT_IDLE = registerSoundEvents("archibot_idle");
+
+    // Archibot
+    public static final RegistryObject<SoundEvent> ARCHIBOT_AMBIENT = registerSoundEvents("archibot_ambient");
+    public static final RegistryObject<SoundEvent> ARCHIBOT_HURT = registerSoundEvents("archibot_hurt");
+    public static final RegistryObject<SoundEvent> ARCHIBOT_DEATH = registerSoundEvents("archibot_death");
+    public static final RegistryObject<SoundEvent> ARCHIBOT_STEP = registerSoundEvents("archibot_step");
 
 
     public static final RegistryObject<SoundEvent> GUN_FIRE = registerSoundEvents("gun_fire");

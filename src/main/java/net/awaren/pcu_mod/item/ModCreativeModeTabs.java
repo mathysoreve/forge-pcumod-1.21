@@ -7,10 +7,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.decoration.PaintingVariant;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,19 +18,30 @@ public class ModCreativeModeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PCUMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> PCU_TAB = CREATIVE_MODE_TABS.register("pcu_tab",
+    public static final RegistryObject<CreativeModeTab> PCU_BLOCKS_TAB = CREATIVE_MODE_TABS.register("pcu_blocks_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.MALACHITE.get()))
-                    .title(Component.translatable("creativetab.pcu_tab"))
+                    .icon(() -> new ItemStack(ModBlocks.BARRIUM_ORE.get()))
+
+                    .title(Component.translatable("creativetab.pcu_blocks_tab"))
 
                     .displayItems((pParameters, pOutput) -> {
-                        for (RegistryObject<Block> block: ModBlocks.BLOCKS.getEntries()) {
-                            pOutput.accept(block.get());
-                        }
 
-                        for (RegistryObject<Item> item: ModItems.ITEMS.getEntries()) {
-                            pOutput.accept(item.get());
-                        }
+                        ModBlocks.BLOCKS.getEntries()
+                                .forEach(block -> pOutput.accept(block.get()));
+
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> PCU_ITEMS_TAB = CREATIVE_MODE_TABS.register("pcu_items_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ELBALITE.get()))
+
+                    .title(Component.translatable("creativetab.pcu_items_tab"))
+
+                    .displayItems((pParameters, pOutput) -> {
+
+                        ModItems.ITEMS.getEntries().stream()
+                                .filter(item -> !(item.get() instanceof BlockItem))
+                                .forEach(item -> pOutput.accept(item.get()));
 
                     })
 

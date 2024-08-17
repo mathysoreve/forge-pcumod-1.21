@@ -1,10 +1,10 @@
 {
-  "archibot_idle": {
-    "subtitles": "sounds.pcu_mod.archibot_idle",
+  "archibot_ambient": {
+    "subtitles": "sounds.pcu_mod.archibot_ambient",
     "sounds": [
-      "pcu_mod:archibot_idle_1",
-      "pcu_mod:archibot_idle_2",
-      "pcu_mod:archibot_idle_3"
+      "pcu_mod:archibot_ambient_1",
+      "pcu_mod:archibot_ambient_2",
+      "pcu_mod:archibot_ambient_3"
     ]
   },
 

@@ -3,6 +3,7 @@ package net.awaren.pcu_mod.entity;
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.entity.custom.Archibot;
 import net.awaren.pcu_mod.entity.custom.ArchibulletProjectileEntity;
+import net.awaren.pcu_mod.entity.custom.Archisentinel;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,9 +22,10 @@ public class ModEntities {
                     .sized(1f, 1.5f)
                     .build("archibot"));
 
-    public static final RegistryObject<EntityType<?>> ARCHISENTINEL
+    public static final RegistryObject<EntityType<Archisentinel>> ARCHISENTINEL
             = ENTITY_TYPES.register("archisentinel",
-            () -> EntityType.Builder.of())
+            () -> EntityType.Builder.of(Archisentinel::new, MobCategory.MONSTER)
+                    .build("archisentinel"));
 
     // Misc
     public static final RegistryObject<EntityType<ArchibulletProjectileEntity>> ARCHIBULLET_PROJECTILE

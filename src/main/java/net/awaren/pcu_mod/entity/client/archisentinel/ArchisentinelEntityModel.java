@@ -1,4 +1,4 @@
-package net.awaren.pcu_mod.entity.client;
+package net.awaren.pcu_mod.entity.client.archisentinel;
 
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.entity.custom.Archisentinel;

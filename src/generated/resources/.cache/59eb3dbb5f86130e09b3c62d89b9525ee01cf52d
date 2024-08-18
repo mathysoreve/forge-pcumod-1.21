@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-17T15:31:28.9753414	Loot Tables
+// 1.20.1	2024-08-18T13:04:10.8858262	Loot Tables
 6fb0d43c4945206d1b19519a856d69a2003f07d6 data/pcu_mod/loot_tables/blocks/barrium_ore.json
 4a9a8114586af9a7478096ea5278334b51186a6a data/pcu_mod/loot_tables/blocks/enclume_alliage.json
 7cb4022dc0323a64e2edfb7dcc442c8aa7ee1517 data/pcu_mod/loot_tables/blocks/fusionneur.json
@@ -7,3 +7,4 @@
 19b6c4e8a7ded55e2360ed85459a19cc0bffe9b2 data/pcu_mod/loot_tables/blocks/neodyme_ore.json
 5dab961eb782065328ce1ac2e59541f8168eb8f2 data/pcu_mod/loot_tables/blocks/terbium_ore.json
 2db41d4c576da5e1b668d4b9bd7a70034f137869 data/pcu_mod/loot_tables/entities/archibot.json
+1fffb1358140d9c66a3ef39eac94dd0404883b0c data/pcu_mod/loot_tables/entities/archisentinel.json

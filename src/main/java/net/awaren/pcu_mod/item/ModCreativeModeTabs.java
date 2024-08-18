@@ -9,6 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -40,11 +41,24 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         ModItems.ITEMS.getEntries().stream()
-                                .filter(item -> !(item.get() instanceof BlockItem))
+                                .filter(item -> !(item.get() instanceof BlockItem) || !(item.get() instanceof ForgeSpawnEggItem))
                                 .forEach(item -> pOutput.accept(item.get()));
 
                     })
 
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> PCU_MOBS_TAB = CREATIVE_MODE_TABS.register("pcu_mobs_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ARCHIBOT_SPAWN_EGG.get()))
+
+                    .title(Component.translatable("creativetab.pcu_mobs_tab"))
+
+                    .displayItems((pParameters, pOutput) -> {
+                        ModItems.ITEMS.getEntries().stream()
+                                .filter(item -> (item.get() instanceof ForgeSpawnEggItem))
+                                .forEach(item -> pOutput.accept(item.get()));
+                    })
                     .build());
 
     public static void register(IEventBus eventBus) {

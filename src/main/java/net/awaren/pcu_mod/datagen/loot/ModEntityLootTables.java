@@ -38,6 +38,12 @@ public class ModEntityLootTables extends EntityLootSubProvider {
                         .add(LootItem.lootTableItem(ModItems.ARCHIBULLET.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(0f, 2f))))));
 
+        this.add(ModEntities.ARCHISENTINEL.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0f))
+                        .add(LootItem.lootTableItem(ModItems.ARCHIBULLET.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0f, 2f))))));
+
 /*
         this.add(EntityType.SPIDER, LootTable.lootTable()
                 .withPool(LootPool.lootPool()

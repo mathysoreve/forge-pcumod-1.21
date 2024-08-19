@@ -1,0 +1,11 @@
+{
+  "type": "pcu_mod:digital_world_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "pcu_mod:test_biome"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

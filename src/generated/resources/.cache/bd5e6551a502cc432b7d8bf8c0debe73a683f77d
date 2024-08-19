@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-16T14:35:29.1148876	Block States: pcu_mod
+// 1.20.1	2024-08-19T19:24:10.1089728	Block States: pcu_mod
 7325194165f9a5752fa9a2febf01833a6a80f9dd assets/pcu_mod/blockstates/barrium_ore.json
 8ae23b7ea2af5c3741601bb7d5e390e1e5ea84c7 assets/pcu_mod/blockstates/enclume_alliage.json
 56a213c6e261da97e5f556a127bd0eb8e87b5702 assets/pcu_mod/blockstates/fusionneur.json
@@ -6,11 +6,13 @@
 87b9298ead532a3240e2bd3d7e2d5e51850155d6 assets/pcu_mod/blockstates/malachite_ore.json
 e71f0cf3db02dbd5b42ed7ef8bb374fec4765594 assets/pcu_mod/blockstates/neodyme_ore.json
 bffe69b79f42c968229857091065e63929e56135 assets/pcu_mod/blockstates/terbium_ore.json
+9c1b762105421048d63465a737107d9b228262b8 assets/pcu_mod/blockstates/test_portal_block.json
 b21d8ce55f342fc913f20088c1e1278c1a2761d0 assets/pcu_mod/models/block/barrium_ore.json
 f9932d1cbc36ca8aa89e575a35683b31320361f7 assets/pcu_mod/models/block/lutecium_ore.json
 c4e3907dbd7c1b7d9edb8d58daec49c86e8eb576 assets/pcu_mod/models/block/malachite_ore.json
 2f040c988fa5ff798de6704fbf9038c07e717165 assets/pcu_mod/models/block/neodyme_ore.json
 91cecbc24295517fd31e33ac3cb27aefc8a9ef3a assets/pcu_mod/models/block/terbium_ore.json
+85175dc6260a9ee35e017ce3d933df295a065ece assets/pcu_mod/models/block/test_portal_block.json
 cad302e10b0707dadee48adcf632d14a4e1b56df assets/pcu_mod/models/item/barrium_ore.json
 d93528695d3ad83d17f0100a7fb4e2420cbd816d assets/pcu_mod/models/item/enclume_alliage.json
 ad2913a7f70dfe2db3c6a6d724b39a324e8fe96c assets/pcu_mod/models/item/fusionneur.json
@@ -18,3 +20,4 @@ c978ac801550c10859be8ce153aacc51a8f7961a assets/pcu_mod/models/item/lutecium_ore
 13c8a2661a43f94b5474f64e0dd26fe9ef95710d assets/pcu_mod/models/item/malachite_ore.json
 1de02ad8c77f0f493d565d531300cda008e3112b assets/pcu_mod/models/item/neodyme_ore.json
 6ec2be73120c1c618dbdfe2ec14570889fbd5d74 assets/pcu_mod/models/item/terbium_ore.json
+6c86cb653a0534ac638b862481939e43c48e306a assets/pcu_mod/models/item/test_portal_block.json

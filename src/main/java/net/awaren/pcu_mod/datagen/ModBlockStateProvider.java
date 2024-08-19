@@ -21,6 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MALACHITE_ORE);
         blockWithItem(ModBlocks.NEODYME_ORE);
         blockWithItem(ModBlocks.LUTECIUM_ORE);
+        blockWithItem(ModBlocks.TEST_PORTAL_BLOCK);
 
         simpleBlockWithItem(ModBlocks.ENCLUME_ALLIAGE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/enclume_alliage")));

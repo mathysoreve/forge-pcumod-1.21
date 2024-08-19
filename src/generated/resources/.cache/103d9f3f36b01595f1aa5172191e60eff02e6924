@@ -1,9 +1,12 @@
-// 1.20.1	2024-08-12T23:46:42.8145846	Registries
+// 1.20.1	2024-08-19T20:55:25.1875115	Registries
+9c33b29466f2da138cd9d8d8290ee812c28c3331 data/pcu_mod/dimension/digital_world.json
+d0daf22da915181a85fe00b2de17ae2def6e2bc9 data/pcu_mod/dimension_type/digital_world_type.json
 b355c316abe7af941c9060befa5a81c1bc53d207 data/pcu_mod/forge/biome_modifier/add-lutecium_ore.json
 614dffad3937f8725a24e305e88c284e6003ed89 data/pcu_mod/forge/biome_modifier/add_barrium_ore.json
 931246583f388317a54f6bc1d97254e498c6d658 data/pcu_mod/forge/biome_modifier/add_malachite_ore.json
 f6e69294fd135958ff3936bfd902a067bc1c3b4a data/pcu_mod/forge/biome_modifier/add_neodyme_ore.json
 47d56949834b41c045933c8d45dd52847b05fa3c data/pcu_mod/forge/biome_modifier/add_terbium_ore.json
+4adad31c4aeb6d6bc2b0e25fdf21dad18d6a8982 data/pcu_mod/worldgen/biome/test_biome.json
 0b908f1fcf88c2bcce6efdb27811c8aa1682d074 data/pcu_mod/worldgen/configured_feature/barrium_ore.json
 849c0c082e7540ea5dc76de2d7645dae641bb337 data/pcu_mod/worldgen/configured_feature/lutecium_ore.json
 469142c8864cda52e2581e917196ce0467d02b7a data/pcu_mod/worldgen/configured_feature/malachite_ore.json

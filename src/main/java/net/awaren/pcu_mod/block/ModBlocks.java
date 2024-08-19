@@ -3,6 +3,7 @@ package net.awaren.pcu_mod.block;
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.block.custom.EnclumeAlliage;
 import net.awaren.pcu_mod.block.custom.Fusionneur;
+import net.awaren.pcu_mod.block.custom.TestPortalBlock;
 import net.awaren.pcu_mod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -42,6 +43,19 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FUSIONNEUR = registerBlock("fusionneur",
             () -> new Fusionneur(BlockBehaviour.Properties.copy(Blocks.ANVIL).noOcclusion()));
+
+    public static final RegistryObject<Block> TEST_PORTAL_BLOCK = registerBlock("test_portal_block",
+            () -> new TestPortalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noLootTable().noOcclusion().noCollission()));
+
+
+
+
+
+
+
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

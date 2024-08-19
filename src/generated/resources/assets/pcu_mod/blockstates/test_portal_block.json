@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pcu_mod:block/test_portal_block"
+    }
+  }
+}

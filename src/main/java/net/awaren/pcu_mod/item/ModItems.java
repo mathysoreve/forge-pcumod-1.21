@@ -105,7 +105,7 @@ public class ModItems
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ARCHIGUN = ITEMS.register("archigun",
-            () -> new ArchigunItem(new Item.Properties(), 2, 3));
+            () -> new ArchigunItem(new Item.Properties()));
 
 
     //Armes

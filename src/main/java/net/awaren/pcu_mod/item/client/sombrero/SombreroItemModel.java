@@ -1,4 +1,4 @@
-package net.awaren.pcu_mod.item.client;
+package net.awaren.pcu_mod.item.client.sombrero;
 
 import net.awaren.pcu_mod.PCUMod;
 import net.awaren.pcu_mod.item.custom.SombreroItem;
@@ -14,7 +14,7 @@ public class SombreroItemModel extends GeoModel<SombreroItem> {
 
     @Override
     public ResourceLocation getTextureResource(SombreroItem sombreroItem) {
-        return new ResourceLocation(PCUMod.MOD_ID, "textures/armor/sombrero.png");
+        return new ResourceLocation(PCUMod.MOD_ID, "textures/models/armor/sombrero.png");
     }
 
     @Override

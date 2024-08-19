@@ -3,6 +3,7 @@ package net.awaren.pcu_mod.entity.custom;
 import net.awaren.pcu_mod.entity.ai.ArchibotRangedAttackGoal;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -53,11 +54,46 @@ public class Archibot extends Monster implements GeoEntity, RangedAttackMob {
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 20)
-                .add(Attributes.MOVEMENT_SPEED, 0.5)
+                .add(Attributes.MOVEMENT_SPEED, 0.4)
                 .add(Attributes.ATTACK_DAMAGE, 4)
                 .add(Attributes.ARMOR_TOUGHNESS, 2)
                 .add(Attributes.FOLLOW_RANGE, 30);
     }
+
+    /**
+     * Performs a ranged attack according to the target's position.
+     * @param target target
+     * @param pVelocity
+     */
+    @Override
+    public void performRangedAttack(LivingEntity target, float pVelocity) {
+
+        System.out.println("Performing ranged attack!");
+
+        ArchibulletProjectileEntity bullet = new ArchibulletProjectileEntity(this.level());
+
+        Vec3 position = this.position();
+        Vec3 targetPosition = target.position();
+        Vec3 direction = targetPosition.subtract(position).normalize();
+
+        bullet.setPos(position.x, position.y + 1, position.z);
+
+        double velocityMultiplier = bullet.getVelocityMultiplier();
+        bullet.setDeltaMovement(direction.scale(velocityMultiplier));
+
+        bullet.shoot(bullet.getDeltaMovement().x, bullet.getDeltaMovement().y, bullet.getDeltaMovement().z, (float)velocityMultiplier, 2f);
+
+        this.level().addFreshEntity(bullet);
+
+        playSound(ModSounds.GUN_FIRE.get());
+
+        String message = "Bullet shot towards: " + direction.x + ", " + direction.y + ", " + direction.z;
+
+        System.out.println(message);
+
+    }
+
+    // Sons
 
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
@@ -86,10 +122,6 @@ public class Archibot extends Monster implements GeoEntity, RangedAttackMob {
         controllerRegistrar.add(new AnimationController(this, "attackController", 0, this::attackPredicate));
     }
 
-
-
-    // TODO : mettre les animations sinon ça va planter
-
     private PlayState predicate(AnimationState animationState) {
         if(animationState.isMoving()) {
             animationState.getController().setAnimation(RawAnimation.begin().then("animation.archibot.walk", Animation.LoopType.LOOP));
@@ -110,34 +142,10 @@ public class Archibot extends Monster implements GeoEntity, RangedAttackMob {
         return PlayState.CONTINUE;
     }
 
-
-
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
     }
 
-    @Override
-    public void performRangedAttack(LivingEntity target, float pVelocity) {
 
-        System.out.println("Performing ranged attack!");
-
-        ArchibulletProjectileEntity bullet = new ArchibulletProjectileEntity(this.level());
-
-        Vec3 position = this.position();
-        Vec3 targetPosition = target.position();
-        Vec3 direction = targetPosition.subtract(position).normalize();
-
-        bullet.setPos(position.x, position.y + 1, position.z);
-
-        double velocityMultiplier = bullet.getVelocityMultiplier();
-        bullet.setDeltaMovement(direction.scale(velocityMultiplier));
-
-        this.level().addFreshEntity(bullet);
-
-        playSound(ModSounds.GUN_FIRE.get());
-
-        System.out.println("Bullet shot towards: " + direction.x + ", " + direction.y + ", " + direction.z);
-
-    }
 }

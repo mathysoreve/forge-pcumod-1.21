@@ -31,7 +31,7 @@ public class ArchibulletProjectileEntity extends AbstractHurtingProjectile imple
         super(pEntityType, pLevel);
     }
 
-    protected ArchibulletProjectileEntity(Level pLevel) {
+    public ArchibulletProjectileEntity(Level pLevel) {
         super(ModEntities.ARCHIBULLET_PROJECTILE.get(), pLevel);
     }
 

@@ -4,8 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.awaren.pcu_mod.block.ModBlocks;
 import net.awaren.pcu_mod.block.entity.ModBlockEntities;
 import net.awaren.pcu_mod.entity.ModEntities;
-import net.awaren.pcu_mod.entity.client.ArchibotEntityRenderer;
-import net.awaren.pcu_mod.entity.client.ArchibulletProjectileEntityRenderer;
+import net.awaren.pcu_mod.entity.client.archibot.ArchibotEntityRenderer;
+import net.awaren.pcu_mod.entity.client.archibullet.ArchibulletProjectileEntityRenderer;
+import net.awaren.pcu_mod.entity.client.archisentinel.ArchisentinelEntityRenderer;
 import net.awaren.pcu_mod.item.ModCreativeModeTabs;
 import net.awaren.pcu_mod.item.ModItems;
 import net.awaren.pcu_mod.painting.ModPaintings;
@@ -16,7 +17,6 @@ import net.awaren.pcu_mod.screen.ModMenuTypes;
 import net.awaren.pcu_mod.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -104,6 +104,7 @@ public class PCUMod
             MenuScreens.register(ModMenuTypes.FUSIONNEUR_MENU.get(), FusionneurScreen::new);
 
             EntityRenderers.register(ModEntities.ARCHIBOT.get(), ArchibotEntityRenderer::new);
+            EntityRenderers.register(ModEntities.ARCHISENTINEL.get(), ArchisentinelEntityRenderer::new);
             EntityRenderers.register(ModEntities.ARCHIBULLET_PROJECTILE.get(), ArchibulletProjectileEntityRenderer::new);
         }
     }

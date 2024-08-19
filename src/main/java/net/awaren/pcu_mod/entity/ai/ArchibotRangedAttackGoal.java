@@ -9,7 +9,7 @@ public class ArchibotRangedAttackGoal extends Goal {
     private final Archibot mob;
     private final double moveSpeedAmp;
     private int attackCooldown;
-    private int initialAttackCooldown;
+    private final int initialAttackCooldown;
     private final float maxAttackDistance;
 
 

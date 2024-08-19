@@ -1,36 +1,36 @@
-[17ao鹴2024 21:52:22.700] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\oreve\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.5, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, pcu_mod, --all, --output, D:\MOD MINECRAFT LOGICIELS\forge-pcumod-1.21\src\generated\resources, --existing, D:\MOD MINECRAFT LOGICIELS\forge-pcumod-1.21\src\main\resources]
-[17ao鹴2024 21:52:22.705] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[17ao鹴2024 21:52:22.843] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[17ao鹴2024 21:52:22.906] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/oreve/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[17ao鹴2024 21:52:23.300] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\oreve\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.5\4c589c051ef533f8898fb5d83514d4186faa0eeb\javafmllanguage-1.20.1-47.3.5.jar is missing mods.toml file
-[17ao鹴2024 21:52:23.304] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\oreve\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.5\8251eee89645828a05f3b04f5df8945baa0743c4\lowcodelanguage-1.20.1-47.3.5.jar is missing mods.toml file
-[17ao鹴2024 21:52:23.309] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\oreve\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.5\53971d6fe08ae7ce74a72fa7d14a82de70a8bd1\mclanguage-1.20.1-47.3.5.jar is missing mods.toml file
-[17ao鹴2024 21:52:23.314] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\oreve\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.5\cc377ceca3274bd1e429c0da17f73720ce29a4d6\fmlcore-1.20.1-47.3.5.jar is missing mods.toml file
-[17ao鹴2024 21:52:23.461] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
-[17ao鹴2024 21:52:24.855] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[17ao鹴2024 21:52:24.858] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\oreve\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, pcu_mod, --all, --output, D:\MOD MINECRAFT LOGICIELS\forge-pcumod-1.21\src\generated\resources, --existing, D:\MOD MINECRAFT LOGICIELS\forge-pcumod-1.21\src\main\resources]
-[17ao鹴2024 21:52:25.215] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\MOD MINECRAFT LOGICIELS\forge-pcumod-1.21\build\createSrgToMcp\output.srg
-[17ao鹴2024 21:52:25.677] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [pcu_mod]
-[17ao鹴2024 21:52:30.734] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.5, for MC 1.20.1 with MCP 20230612.114412
-[17ao鹴2024 21:52:30.741] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.5 Initialized
-[17ao鹴2024 21:52:30.817] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[17ao鹴2024 21:52:31.640] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/oreve/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[17ao鹴2024 21:52:31.641] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/oreve/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[17ao鹴2024 21:52:31.830] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[17ao鹴2024 21:52:31.888] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 57 ms
-[17ao鹴2024 21:52:31.888] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[17ao鹴2024 21:52:31.949] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 61 ms
-[17ao鹴2024 21:52:31.950] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id pcu_mod
-[17ao鹴2024 21:52:32.062] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id pcu_mod finished after 111 ms
-[17ao鹴2024 21:52:32.062] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id pcu_mod
-[17ao鹴2024 21:52:32.063] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id pcu_mod finished after 1 ms
-[17ao鹴2024 21:52:32.064] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:painting_variant mod id pcu_mod
-[17ao鹴2024 21:52:32.065] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:painting_variant mod id pcu_mod finished after 0 ms
-[17ao鹴2024 21:52:32.065] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: pcu_mod
-[17ao鹴2024 21:52:32.196] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: pcu_mod finished after 130 ms
-[17ao鹴2024 21:52:32.196] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: pcu_mod
-[17ao鹴2024 21:52:32.206] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: pcu_mod finished after 10 ms
-[17ao鹴2024 21:52:32.207] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[17ao鹴2024 21:52:32.226] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 19 ms
-[17ao鹴2024 21:52:32.226] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 396 ms
-[17ao鹴2024 21:52:32.233] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 77, old count: 77, new count: 78, removed stale: 0, written: 0
+[18ao没t2024 19:30:15.412] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\miste\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.5, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, pcu_mod, --all, --output, C:\Users\miste\Documents\GitHub\forge-pcumod-1.21\src\generated\resources, --existing, C:\Users\miste\Documents\GitHub\forge-pcumod-1.21\src\main\resources]
+[18ao没t2024 19:30:15.416] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[18ao没t2024 19:30:15.522] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[18ao没t2024 19:30:15.581] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/miste/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[18ao没t2024 19:30:15.951] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\miste\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.5\4c589c051ef533f8898fb5d83514d4186faa0eeb\javafmllanguage-1.20.1-47.3.5.jar is missing mods.toml file
+[18ao没t2024 19:30:15.955] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\miste\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.5\8251eee89645828a05f3b04f5df8945baa0743c4\lowcodelanguage-1.20.1-47.3.5.jar is missing mods.toml file
+[18ao没t2024 19:30:15.958] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\miste\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.5\53971d6fe08ae7ce74a72fa7d14a82de70a8bd1\mclanguage-1.20.1-47.3.5.jar is missing mods.toml file
+[18ao没t2024 19:30:15.962] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\miste\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.5\cc377ceca3274bd1e429c0da17f73720ce29a4d6\fmlcore-1.20.1-47.3.5.jar is missing mods.toml file
+[18ao没t2024 19:30:16.110] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[18ao没t2024 19:30:17.518] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[18ao没t2024 19:30:17.520] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\miste\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, pcu_mod, --all, --output, C:\Users\miste\Documents\GitHub\forge-pcumod-1.21\src\generated\resources, --existing, C:\Users\miste\Documents\GitHub\forge-pcumod-1.21\src\main\resources]
+[18ao没t2024 19:30:17.867] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\miste\Documents\GitHub\forge-pcumod-1.21\build\createSrgToMcp\output.srg
+[18ao没t2024 19:30:18.158] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [pcu_mod]
+[18ao没t2024 19:30:22.187] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.5, for MC 1.20.1 with MCP 20230612.114412
+[18ao没t2024 19:30:22.189] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.5 Initialized
+[18ao没t2024 19:30:22.232] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[18ao没t2024 19:30:22.945] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/miste/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[18ao没t2024 19:30:22.946] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/miste/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.5_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[18ao没t2024 19:30:23.072] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[18ao没t2024 19:30:23.096] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 23 ms
+[18ao没t2024 19:30:23.096] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[18ao没t2024 19:30:23.173] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 76 ms
+[18ao没t2024 19:30:23.173] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id pcu_mod
+[18ao没t2024 19:30:23.262] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id pcu_mod finished after 88 ms
+[18ao没t2024 19:30:23.262] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id pcu_mod
+[18ao没t2024 19:30:23.263] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id pcu_mod finished after 1 ms
+[18ao没t2024 19:30:23.263] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:painting_variant mod id pcu_mod
+[18ao没t2024 19:30:23.264] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:painting_variant mod id pcu_mod finished after 0 ms
+[18ao没t2024 19:30:23.264] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: pcu_mod
+[18ao没t2024 19:30:23.368] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: pcu_mod finished after 103 ms
+[18ao没t2024 19:30:23.368] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: pcu_mod
+[18ao没t2024 19:30:23.377] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: pcu_mod finished after 8 ms
+[18ao没t2024 19:30:23.377] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[18ao没t2024 19:30:23.390] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 13 ms
+[18ao没t2024 19:30:23.390] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 318 ms
+[18ao没t2024 19:30:23.399] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 79, old count: 79, new count: 80, removed stale: 0, written: 0

@@ -6,7 +6,6 @@
   "block.pcu_mod.neodyme_ore": "Neodyme Ore",
 
   "block.pcu_mod.lutecium_ore": "Lutecium Ore",
-  "block.pcu_mod.enclume_alliage": "Alloy anvil",
 
 
 
@@ -32,7 +31,8 @@
   "item.pcu_mod.sombrero": "Sombrero",
 
   "item.pcu_mod.archibullet": "Archibullet",
-  "item.pcu_mod.archibot_spawn_egg": "Archibot Egg",
+  "item.pcu_mod.archibot_spawn_egg": "Archibot Spawn Egg",
+  "item.pcu_mod.archisentinel_spawn_egg": "Archisentinel Spawn Egg",
 
   "item.pcu_mod.idris_elba_sword": "Idris Elba Sword",
 
@@ -72,5 +72,8 @@
 
 
 
-  "creativetab.pcu_tab": "PCU Tab"
+  "creativetab.pcu_blocks_tab": "PCU Blocks",
+  "creativetab.pcu_items_tab": "PCU Items",
+  "creativetab.pcu_mobs_tab": "PCU Mobs"
+
 }

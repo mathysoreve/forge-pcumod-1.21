@@ -8,6 +8,44 @@
     ]
   },
 
+  "archisentinel_ambient": {
+    "subtitles": "sounds.pcu_mod.archisentinel_ambient",
+    "sounds": [
+      "pcu_mod:archisentinel_ambient_1",
+      "pcu_mod:archisentinel_ambient_2",
+      "pcu_mod:archisentinel_ambient_3",
+      "pcu_mod:archisentinel_ambient_4",
+      "pcu_mod:archisentinel_ambient_5"
+    ]
+  },
+
+  "archisentinel_hurt": {
+    "subtitles": "sounds.pcu_mod.archisentinel_hurt",
+    "sounds": [
+      "pcu_mod:archisentinel_hurt_1",
+      "pcu_mod:archisentinel_hurt_2",
+      "pcu_mod:archisentinel_hurt_3"
+    ]
+  },
+
+  "archisentinel_death": {
+    "subtitles": "sounds.pcu_mod.archisentinel_death",
+    "sounds": [
+      "pcu_mod:archisentinel_death_1",
+      "pcu_mod:archisentinel_death_2",
+      "pcu_mod:archisentinel_death_3"
+    ]
+  },
+
+  "archisentinel_step": {
+    "subtitles": "sounds.pcu_mod.archisentinel_step",
+    "sounds": [
+      "pcu_mod:archisentinel_step_1",
+      "pcu_mod:archisentinel_step_2",
+      "pcu_mod:archisentinel_step_3"
+    ]
+  },
+
   "gun_fire": {
     "subtitles": "sounds.pcu_mod.gun_fire",
     "sounds": [

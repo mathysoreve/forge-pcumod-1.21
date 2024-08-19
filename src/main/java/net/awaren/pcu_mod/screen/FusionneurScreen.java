@@ -35,12 +35,19 @@ public class FusionneurScreen extends AbstractContainerScreen<FusionneurMenu> {
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
+        renderLit(guiGraphics, x, y);
 
     }
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
             guiGraphics.blit(TEXTURE, x + 79, y + 35, 176, 14, menu.getScaledProgress(), 17);
+        }
+    }
+
+    private void renderLit(GuiGraphics guiGraphics, int x, int y) {
+        if(menu.isCrafting()) {
+            guiGraphics.blit(TEXTURE, x + 44, y + 37, 176, 0, 14, menu.getLit());
         }
     }
 

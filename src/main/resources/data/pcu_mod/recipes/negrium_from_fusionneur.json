@@ -1,0 +1,18 @@
+{
+  "type": "pcu_mod:fusionneur",
+  "ingredients": [
+    {
+      "item": "pcu_mod:pyrite_ingot"
+    },
+    {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    {
+      "item": "minecraft:lava_bucket"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "pcu_mod:negrium_shard"
+  }
+}

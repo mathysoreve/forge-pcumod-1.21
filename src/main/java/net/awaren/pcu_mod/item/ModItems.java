@@ -100,6 +100,13 @@ public class ModItems
             () -> new Item(new Item.Properties()));
 
 
+    //Armes
+    public static final RegistryObject<Item> IDRIS_ELBA_SWORD = ITEMS.register("idris_elba_sword",
+            () -> new SwordItem(ModToolTiers.ELBALITE, 100, 9, new Item.Properties().rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> MARTEAU_GLPI = ITEMS.register("marteau_glpi",
+            () -> new SwordItem(Tiers.DIAMOND, 9, 4, new Item.Properties().rarity(Rarity.UNCOMMON)));
+
     public static void register(IEventBus eventBus)
     {
         ITEMS.register(eventBus);

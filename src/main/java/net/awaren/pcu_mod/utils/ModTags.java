@@ -12,6 +12,8 @@ public class ModTags {
 
     public static class Blocks {
 
+        public static final TagKey<Block> NEED_ELBALITE_TOOL = tag("need_elbalite_tool");
+
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(PCUMod.MOD_ID, name));
         }

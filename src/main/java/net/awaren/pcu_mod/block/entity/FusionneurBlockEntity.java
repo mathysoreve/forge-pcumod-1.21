@@ -17,7 +17,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -32,7 +34,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class FusionneurBlockEntity extends BlockEntity implements MenuProvider {
+public class FusionneurBlockEntity extends AbstractFurnaceBlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
 
     private static final int INPUT_SLOT0 = 0;
@@ -47,7 +49,7 @@ public class FusionneurBlockEntity extends BlockEntity implements MenuProvider {
     private int maxProgress = 78;
 
     public FusionneurBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.FUSIONNEUR_BE.get(), pPos, pBlockState);
+        super(ModBlockEntities.FUSIONNEUR_BE.get(), pPos, pBlockState, RecipeType.SMELTING);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
@@ -108,10 +110,20 @@ public class FusionneurBlockEntity extends BlockEntity implements MenuProvider {
         return Component.translatable("block.pcu_mod.fusionneur");
     }
 
+    @Override
+    protected Component getDefaultName() {
+        return null;
+    }
+
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
         return new FusionneurMenu(pContainerId, pPlayerInventory, this, this.data);
+    }
+
+    @Override
+    protected AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory) {
+        return null;
     }
 
     @Override
